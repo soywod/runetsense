@@ -1,0 +1,20 @@
+{
+  "name": "runetsense",
+  "version": "1.0.0",
+  "description": "Site vitrine pour la société Run&Sense",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clément DOUIN <freelance@soywod.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-chug": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "html5boiler": "0.0.9",
+    "modernizr": "^3.3.1",
+    "semantic-ui": "^2.2.1"
+  }
+}
