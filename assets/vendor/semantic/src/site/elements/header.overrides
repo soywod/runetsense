@@ -1,3 +1,11 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.header.primary {
+  color: @primaryColor;
+}
+
+.ui.header.secondary {
+  color: @secondaryColor;
+}

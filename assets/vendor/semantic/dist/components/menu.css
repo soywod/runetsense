@@ -25,7 +25,7 @@
   display: flex;
   margin: 1rem 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  background: #FFFFFF;
+  background: #1a303d;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -87,7 +87,7 @@
   background: none;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
   transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
@@ -411,8 +411,8 @@
 .ui.menu .link.item:hover,
 .ui.menu a.item:hover {
   cursor: pointer;
-  background: #ffffff;
-  color: #05A38B;
+  background: transparent;
+  color: #05a38b;
 }
 
 /*--------------
@@ -422,8 +422,8 @@
 .ui.link.menu .item:active,
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
-  background: #ffffff;
-  color: #05A38B;
+  background: transparent;
+  color: #05a38b;
 }
 
 /*--------------
@@ -624,7 +624,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.92857143em 1.42857143em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 .ui.tabular.menu .item:before {
   display: none;
@@ -2007,6 +2007,9 @@ Floated Menu / Item
 .ui.menu {
   border: none;
   box-shadow: none;
+  background: none;
+  -webkit-transition: background 400ms;
+  transition: background 400ms;
 }
 .ui.menu a.item {
   text-transform: uppercase;
@@ -2014,4 +2017,8 @@ Floated Menu / Item
 }
 .ui.menu a.item:focus {
   outline: none;
+}
+.ui.scrolled.menu {
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  background: #1a303d;
 }

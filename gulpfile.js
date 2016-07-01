@@ -35,7 +35,7 @@ gulp.task("semui", function () {
 gulp.task("local-js", function () {
 	gulp.src(path.js.local)
 		.pipe(concat("local.min.js"))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest(path.js.public))
 });
 
