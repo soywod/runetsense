@@ -663,10 +663,6 @@ input::selection {
 /*******************************
          Site Overrides
 *******************************/
-
-.ui.transparent.menu {
-  background: pink;
-}
 /*!
  * # Semantic UI 2.2.1 - Button
  * http://github.com/semantic-org/semantic-ui/
@@ -20976,8 +20972,8 @@ ol.ui.horizontal.list li:before,
 .ui.menu .link.item:hover,
 .ui.menu a.item:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.95);
+  background: #ffffff;
+  color: #05A38B;
 }
 
 /*--------------
@@ -20987,8 +20983,8 @@ ol.ui.horizontal.list li:before,
 .ui.link.menu .item:active,
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.95);
+  background: #ffffff;
+  color: #05A38B;
 }
 
 /*--------------
@@ -22782,6 +22778,20 @@ Floated Menu / Item
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.menu {
+  border: none;
+  box-shadow: none;
+}
+
+.ui.menu a.item {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ui.menu a.item:focus {
+  outline: none;
+}
 /*!
  * # Semantic UI 2.2.1 - Message
  * http://github.com/semantic-org/semantic-ui/
@@ -28518,7 +28528,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:checked ~ .box:before,
 .ui.toggle.checkbox input:checked ~ label:before {
-  background-color: #2185D0 !important;
+  background-color: #05A38B !important;
 }
 
 .ui.toggle.checkbox input:checked ~ .box:after,
@@ -28535,7 +28545,7 @@ a.ui.card:hover,
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
 .ui.toggle.checkbox input:focus:checked ~ label:before {
-  background-color: #0d71bb !important;
+  background-color: #007f6c !important;
 }
 
 /*******************************

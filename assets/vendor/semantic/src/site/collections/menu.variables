@@ -1,3 +1,7 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+@hoverItemBackground: #ffffff;
+@hoverItemTextColor: @primaryColor;
+@pressedItemBackground: #ffffff;
