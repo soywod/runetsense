@@ -1,69 +1,65 @@
+const THEME_ASSETS = "./source/themes/soywod/runetsense/assets";
+
 var gulp   = require("gulp"),
     chug   = require("gulp-chug"),
     concat = require("gulp-concat"),
-    uglify = require("gulp-uglify"),
     sass   = require("gulp-sass");
 
 // ==================== PATHS ==================== //
 
 var path = {
-	js  : {
-		local : "./assets/js/**/*.js",
-		public: "./public/js/",
-		vendor: [
-			"./node_modules/jquery/dist/jquery.min.js",
-			"./assets/vendor/semantic/dist/semantic.min.js"
-		]
+	src   : {
+		css: "./assets/sass/main.sass",
+		js : "./assets/js/**/*.js"
 	},
-	css : {
-		local : "./assets/sass/main.sass",
-		public: "./public/css/",
-		vendor: [
+	dest  : {
+		css : THEME_ASSETS + "/css/",
+		js  : THEME_ASSETS + "/js/",
+		icon: THEME_ASSETS + "/css/themes/"
+	},
+	vendor: {
+		css : [
 			"./node_modules/html5boiler/lib/html5boilerPlate/css/normalize.css",
 			"./assets/vendor/semantic/dist/semantic.min.css"
-		]
+		],
+		js  : [
+			"./node_modules/jquery/dist/jquery.min.js",
+			"./assets/vendor/semantic/dist/semantic.min.js"
+		],
+		icon: "./assets/vendor/semantic/dist/themes/**/*"
 	}
 };
 
 // ==================== TASKS ==================== //
 
-gulp.task("semui", function () {
-	gulp.src("./assets/vendor/semantic/gulpfile.js")
-		.pipe(myChug("build"));
-});
-
-gulp.task("local-js", function () {
-	gulp.src(path.js.local)
-		.pipe(concat("local.min.js"))
-		//.pipe(uglify())
-		.pipe(gulp.dest(path.js.public))
-});
-
-gulp.task("local-css", function () {
-	gulp.src(path.css.local)
+gulp.task("css", function () {
+	gulp.src(path.src.css)
 		.pipe(concat("local.min.css"))
 		.pipe(sass().on("error", sass.logError))
-		.pipe(gulp.dest(path.css.public))
+		.pipe(gulp.dest(path.dest.css))
 });
 
-gulp.task("vendor-js", function () {
-	gulp.src(path.js.vendor)
-		.pipe(concat("vendor.min.js"))
-		.pipe(gulp.dest(path.js.public))
+gulp.task("js", function () {
+	gulp.src(path.src.js)
+		.pipe(concat("local.min.js"))
+		.pipe(gulp.dest(path.dest.js))
 });
 
 gulp.task("vendor-css", function () {
-	gulp.src(path.css.vendor)
+	gulp.src(path.vendor.css)
 		.pipe(concat("vendor.min.css"))
-		.pipe(gulp.dest(path.css.public))
+		.pipe(gulp.dest(path.dest.css))
 });
 
-gulp.task("local", ["local-js", "local-css"]);
-gulp.task("vendor", ["vendor-js", "vendor-css"]);
-gulp.task("default", ["local", "vendor"]);
+gulp.task("vendor-js", function () {
+	gulp.src(path.vendor.js)
+		.pipe(concat("vendor.min.js"))
+		.pipe(gulp.dest(path.dest.js))
+});
 
-// ================== FUNCTIONS ================== //
+gulp.task("vendor-icon", function () {
+	gulp.src(path.vendor.icon)
+		.pipe(gulp.dest(path.dest.icon))
+});
 
-function myChug(task) {
-	return chug({tasks: [task]})
-}
+gulp.task("default", ["css", "js", "vendor-css", "vendor-js", "vendor-icon"]);
