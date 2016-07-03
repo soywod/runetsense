@@ -16,8 +16,8 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="assets/css/vendor.min.css">
-	<link rel="stylesheet" href="assets/css/local.min.css">
+	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/vendor.min.css') }}">
+	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/local.min.css') }}">
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -27,26 +27,24 @@
 	<![endif]-->
 
 	<nav class="ui fixed borderless menu">
-		<div class="ui container">
-			<a href="/" class="logo item">
-				<img class="ui" src="assets/img/logo.png" alt="Logo de Run&Sense">
-			</a>
+		<a href="/" class="logo item">
+			<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense">
+		</a>
 
-			<div class="right item">
-				<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
-				<a href="" class="item">à propos</a>
-				<a href="" class="item">pour l'entreprise</a>
-				<a href="" class="item">pour le sport</a>
-				<a href="" class="item">contact</a>
-			</div>
+		<div class="right item">
+			<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
+			<a href="" class="item {{ page.menu == 'about' ? 'active' : '' }}">à propos</a>
+			<a href="" class="item {{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a>
+			<a href="" class="item {{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a>
+			<a href="" class="item {{ page.menu == 'contact' ? 'active' : '' }}">contact</a>
 		</div>
 	</nav>
 
 	{% block content %}
 	{% endblock %}
 
-	<script src="assets/js/vendor.min.js"></script>
-	<script src="assets/js/local.min.js"></script>
+	<script src="{{ site.url }}/{{ theme_path('assets/js/vendor.min.js') }}"></script>
+	<script src="{{ site.url }}/{{ theme_path('assets/js/local.min.js') }}"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
 	<script>

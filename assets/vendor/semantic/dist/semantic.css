@@ -21001,7 +21001,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .active.item {
   background: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  color: #05a38b;
   font-weight: normal;
   box-shadow: none;
 }
@@ -21017,7 +21017,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
   background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  color: #05a38b;
 }
 
 /*--------------
@@ -21183,7 +21183,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #05a38b;
 }
 
 /*--------------
@@ -22802,6 +22802,11 @@ Floated Menu / Item
 
 .ui.menu a.item:focus {
   outline: none;
+}
+
+.ui.menu a.item.active {
+  background: none;
+  font-weight: bold;
 }
 
 .ui.scrolled.menu {

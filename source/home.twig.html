@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: default
 menu: home
 ---
 
@@ -11,7 +11,7 @@ menu: home
 		</div>
 	</header>
 	<div id="video-wrap">
-		<video src="assets/video/intro.mp4" autoplay muted loop></video>
+		<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
 	</div>
 </section>
 
@@ -32,7 +32,7 @@ menu: home
 
 			<div class="ui fluid card">
 				<div class="image">
-					<img src="assets/img/image-secondary.png" alt="" width="100%">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
 				</div>
 				<div class="content">
 					<h3 class="ui large header">Observation</h3>
@@ -62,7 +62,63 @@ menu: home
 
 			<div class="ui fluid card">
 				<div class="image">
-					<img src="assets/img/image-primary.png" alt="" width="100%">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
+				</div>
+				<div class="content">
+					<h3 class="ui large header">Observation</h3>
+					<div class="description">
+						<ul>
+							<li>Ceci</li>
+							<li>Cela</li>
+							<li>Là</li>
+							<li>En dessous</li>
+							<li>Ici</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui eight wide centered column">
+			<div class="ui justified basic segment">
+				<h3 class="ui large centered header">
+					Conclusion ?
+				</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi culpa delectus
+					deserunt
+					ducimus eius ipsam ipsum laboriosam, laborum molestias nihil nostrum quaerat quo reiciendis suscipit
+					tempore unde velit. Aspernatur at dolore doloremque magnam nihil nobis, non obcaecati quo rerum ut.
+					Accusantium amet consectetur dolores doloribus earum eos excepturi iure mollitia obcaecati officia
+					perferendis quis repudiandae sint, tempore voluptates.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui grid">
+		<div class="eight wide ui column">
+			<div class="ui fluid card">
+				<div class="image">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
+				</div>
+				<div class="content">
+					<h3 class="ui large header">Observation</h3>
+					<div class="description">
+						<ul>
+							<li>Ceci</li>
+							<li>Cela</li>
+							<li>Là</li>
+							<li>En dessous</li>
+							<li>Ici</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui eight wide column">
+			<div class="ui fluid card">
+				<div class="image">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
 				</div>
 				<div class="content">
 					<h3 class="ui large header">Observation</h3>

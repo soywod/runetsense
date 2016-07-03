@@ -6,4 +6,6 @@
 @itemTextColor: #ffffff;
 @hoverItemBackground: transparent;
 @hoverItemTextColor: @primaryColor;
+@activeItemTextColor: @primaryColor;
+@activeHoverItemColor: @primaryColor;
 @pressedItemBackground: transparent;
