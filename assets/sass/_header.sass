@@ -1,4 +1,4 @@
-#intro
+//#intro
   position: relative
   top: 0
   left: 0
@@ -20,7 +20,7 @@
     color: #ffffff
     background: url(../img/pattern-dark.png) repeat
 
-#video-wrap
+//#video-wrap
   padding: 56.25% 0 0 0
   margin: 0
   width: 100%
@@ -34,3 +34,51 @@
     width: 100%
     height: 100%
     z-index: 1
+
+.computer
+  video
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+
+  header
+    display: flex
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    align-items: center
+    justify-content: center
+    z-index: 2
+    text-align: center
+
+  @media (max-aspect-ratio: 16/9)
+    video
+      width: 300%
+      left: -100%
+
+  @media (min-aspect-ratio: 16/9)
+    video
+      height: 300%
+      top: -100%
+
+.mobile
+  .video-wrap
+    position: fixed
+    top: 64px
+    right: 0
+    bottom: 0
+    left: 0
+
+  video
+    width: 100%
+    height: auto
+    z-index: 1
+
+  footer
+    height: 100%
+    width: 100%

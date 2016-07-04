@@ -723,5 +723,17 @@ a.ui.inverted.grey.header:hover {
   color: #05a38b;
 }
 .ui.header.secondary {
-  color: #1a303d;
+  color: #5e442b;
+}
+.home .ui.icon.header .icon {
+  color: #ffffff;
+  opacity: .5;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+.home .ui.icon.header .content {
+  color: #ffffff;
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
 }

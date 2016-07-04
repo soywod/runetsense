@@ -2,10 +2,13 @@
     User Variable Overrides
 *******************************/
 
-@background: @secondaryColor;
-@itemTextColor: #ffffff;
+@background: rgba(255, 255, 255, .95);
+@itemTextColor: @secondaryColor;
 @hoverItemBackground: transparent;
 @hoverItemTextColor: @primaryColor;
 @activeItemTextColor: @primaryColor;
 @activeHoverItemColor: @primaryColor;
 @pressedItemBackground: transparent;
+@activeHoverItemBackground: transparent;
+@margin: 64px 0 0 14px;
+@borderRadius: 0;

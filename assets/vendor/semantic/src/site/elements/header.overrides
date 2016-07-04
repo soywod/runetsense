@@ -9,3 +9,26 @@
 .ui.header.secondary {
   color: @secondaryColor;
 }
+
+.home .ui.icon.header {
+  .icon {
+    color: #ffffff;
+    opacity: .5;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -ms-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+    transition: opacity 400ms;
+  }
+
+  .content {
+    color: #ffffff;
+    opacity: 0;
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    -ms-transition: opacity 400ms;
+    -o-transition: opacity 400ms;
+    transition: opacity 400ms;
+
+  }
+}

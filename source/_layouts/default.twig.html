@@ -18,6 +18,9 @@
 
 	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/vendor.min.css') }}">
 	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/local.min.css') }}">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	<link rel="manifest" href="{{ site.url }}/{{ theme_path('assets/manifest.json') }}">
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -26,19 +29,45 @@
 		to improve your experience.</p>
 	<![endif]-->
 
-	<nav class="ui fixed borderless menu">
-		<a href="/" class="logo item">
-			<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense">
-		</a>
+	<div class="ui grid">
+		<div class="computer only row">
+			<nav class="ui fixed borderless menu">
+				<a href="/" class="logo item">
+					<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense" width="150px">
+				</a>
 
-		<div class="right item">
-			<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
-			<a href="" class="item {{ page.menu == 'about' ? 'active' : '' }}">à propos</a>
-			<a href="" class="item {{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a>
-			<a href="" class="item {{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a>
-			<a href="" class="item {{ page.menu == 'contact' ? 'active' : '' }}">contact</a>
+				<div class="right item">
+					<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
+					<a href="" class="item {{ page.menu == 'about' ? 'active' : '' }}">à propos</a>
+					<a href="" class="item {{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a>
+					<a href="" class="item {{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a>
+					<a href="" class="item {{ page.menu == 'contact' ? 'active' : '' }}">contact</a>
+				</div>
+			</nav>
 		</div>
-	</nav>
+
+		<div class="tablet only mobile only row">
+			<div class="ui fixed borderless navbar menu">
+				<a href="/" class="logo item">
+					<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense" width="125px">
+				</a>
+
+				<div class="right menu open">
+					<a href="" class="menu icon item">
+						<i class="content big secondary icon"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="ui vertical navbar fluid menu" style="display: none">
+				<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
+				<a href="" class="item {{ page.menu == 'about' ? 'active' : '' }}">à propos</a>
+				<a href="" class="item {{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a>
+				<a href="" class="item {{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a>
+				<a href="" class="item {{ page.menu == 'contact' ? 'active' : '' }}">contact</a>
+			</div>
+		</div>
+	</div>
 
 	{% block content %}
 	{% endblock %}

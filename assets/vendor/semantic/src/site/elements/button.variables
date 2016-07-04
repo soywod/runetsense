@@ -3,3 +3,4 @@
 *******************************/
 
 @primaryColor: #05A38B;
+@borderRadius: 0;

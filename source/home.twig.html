@@ -3,7 +3,8 @@ layout: default
 menu: home
 ---
 
-<section id="intro">
+<!--
+<section id="intro" class="computer only">
 	<header>
 		<div>
 			<h1>GROS TITRE</h1>
@@ -13,140 +14,63 @@ menu: home
 	<div id="video-wrap">
 		<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
 	</div>
-</section>
+</section> -->
 
-<br>
-
-<section id="compare" class="ui container">
-	<div class="ui grid">
-		<div class="eight wide ui column">
-			<h2 class="ui huge secondary header">
-				<i class="industry icon"></i>
-				<div class="content">
-					Entreprise
-					<div class="sub header">
-						Préférences motrices appliquées à l'entreprise
+<div class="ui grid">
+	<section class="computer only row home">
+		<header>
+			<div class="ui container">
+				<div class="ui two column fluid grid">
+					<div class="left aligned column">
+						<a href="">
+							<div class="ui large icon header">
+								<i class="angle double left icon"></i>
+								<div class="content">
+									Entreprise
+								</div>
+							</div>
+						</a>
 					</div>
-				</div>
-			</h2>
 
-			<div class="ui fluid card">
-				<div class="image">
-					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
-				</div>
-				<div class="content">
-					<h3 class="ui large header">Observation</h3>
-					<div class="description">
-						<ul>
-							<li>Ceci</li>
-							<li>Cela</li>
-							<li>Là</li>
-							<li>En dessous</li>
-							<li>Ici</li>
-						</ul>
+					<div class="right aligned column">
+						<a href="">
+							<div class="ui large icon header">
+								<i class="angle double right icon"></i>
+								<div class="content">
+									Sport
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
+		<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
+	</section>
 
-		<div class="ui eight wide column">
-			<h2 class="ui huge primary header">
-				<i class="soccer icon"></i>
-				<div class="content">
-					Sport
-					<div class="sub header">
-						Préférences motrices appliquées au sport (football)
+	<section class="tablet only mobile only row home">
+		<div class="video-wrap">
+			<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
+			<footer>
+				<div class="ui fluid two column padded grid">
+					<div class="column">
+						<a href="">
+							<button class="ui secondary fluid button">
+								<i class="angle double left icon"></i>
+								Entreprise
+							</button>
+						</a>
+					</div>
+					<div class="column">
+						<a href="">
+							<button class="ui primary fluid button">
+								Sport
+								<i class="angle double right icon"></i>
+							</button>
+						</a>
 					</div>
 				</div>
-			</h2>
-
-			<div class="ui fluid card">
-				<div class="image">
-					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
-				</div>
-				<div class="content">
-					<h3 class="ui large header">Observation</h3>
-					<div class="description">
-						<ul>
-							<li>Ceci</li>
-							<li>Cela</li>
-							<li>Là</li>
-							<li>En dessous</li>
-							<li>Ici</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			</footer>
 		</div>
-
-		<div class="ui eight wide centered column">
-			<div class="ui justified basic segment">
-				<h3 class="ui large centered header">
-					Conclusion ?
-				</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi culpa delectus
-					deserunt
-					ducimus eius ipsam ipsum laboriosam, laborum molestias nihil nostrum quaerat quo reiciendis suscipit
-					tempore unde velit. Aspernatur at dolore doloremque magnam nihil nobis, non obcaecati quo rerum ut.
-					Accusantium amet consectetur dolores doloribus earum eos excepturi iure mollitia obcaecati officia
-					perferendis quis repudiandae sint, tempore voluptates.</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="ui grid">
-		<div class="eight wide ui column">
-			<div class="ui fluid card">
-				<div class="image">
-					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
-				</div>
-				<div class="content">
-					<h3 class="ui large header">Observation</h3>
-					<div class="description">
-						<ul>
-							<li>Ceci</li>
-							<li>Cela</li>
-							<li>Là</li>
-							<li>En dessous</li>
-							<li>Ici</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="ui eight wide column">
-			<div class="ui fluid card">
-				<div class="image">
-					<img src="{{ site.url }}/{{ theme_path('assets/img/image.png') }}" alt="" width="100%">
-				</div>
-				<div class="content">
-					<h3 class="ui large header">Observation</h3>
-					<div class="description">
-						<ul>
-							<li>Ceci</li>
-							<li>Cela</li>
-							<li>Là</li>
-							<li>En dessous</li>
-							<li>Ici</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="ui eight wide centered column">
-			<div class="ui justified basic segment">
-				<h3 class="ui large centered header">
-					Conclusion ?
-				</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias animi culpa delectus
-					deserunt
-					ducimus eius ipsam ipsum laboriosam, laborum molestias nihil nostrum quaerat quo reiciendis suscipit
-					tempore unde velit. Aspernatur at dolore doloremque magnam nihil nobis, non obcaecati quo rerum ut.
-					Accusantium amet consectetur dolores doloribus earum eos excepturi iure mollitia obcaecati officia
-					perferendis quis repudiandae sint, tempore voluptates.</p>
-			</div>
-		</div>
-	</div>
-</section>
+	</section>
+</div>
