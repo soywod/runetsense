@@ -1,0 +1,75 @@
+@import "colors";
+
+.video {
+  background: $black;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+
+.video-arrow {
+  z-index: 2;
+  font-size: 2.5rem;
+  font-family: Lato, sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .3;
+    transition: opacity 400ms;
+  }
+
+  span {
+    opacity: 0;
+    transition: opacity 400ms;
+  }
+
+  &.visible {
+    a {
+      opacity: .9;
+    }
+
+    span {
+      opacity: .6;
+    }
+  }
+}
+
+.video-company a:hover + .video-sport {
+  color: blue !important;
+}
+
+.video-company {
+  margin-left: 30px;
+}
+
+.video-sport {
+  text-align: right;
+  margin-right: 30px;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 767px) {
+  .video video {
+    object-fit: inherit;
+    height: auto;
+    position: inherit;
+  }
+
+  .video-arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+@import "colors";
+
+.about {
+  font-family: Lato, sans-serif;
+  margin: 150px 0 15px 0;
+  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid transparentize($brown, .8);
+  box-shadow: 0 2px 7px 0 transparentize($brown, .85);
+}
+
+.about-bio {
+  img {
+    float: left;
+    margin: 0 15px 15px 0;
+    border-radius: 50% 50%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 1rem;
+
+    li {
+      padding: 7px;
+
+      &:before {
+        font-family: FontAwesome, sans-serif;
+        content: "\f054 \0020";
+      }
+    }
+  }
+}
+
+.about-name {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-top: 80px;
+  }
+}

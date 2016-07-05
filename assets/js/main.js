@@ -34,6 +34,38 @@
  $('.ui.dropdown').dropdown();
  });*/
 
-function DOMLoaded() {
-	var i = 5;
+function DOMLoaded(page) {
+	if (typeof window[page] === "function") {
+		window[page]();
+	}
+}
+
+function home() {
+	var $videoLeftArrow  = document.getElementsByClassName("video-company")[0];
+	var $videoRightArrow = document.getElementsByClassName("video-sport")[0];
+
+	loadMenu();
+
+	$videoLeftArrow.addEventListener("mouseenter", toggleActiveClass);
+	$videoLeftArrow.addEventListener("mouseleave", toggleActiveClass);
+	$videoRightArrow.addEventListener("mouseenter", toggleActiveClass);
+	$videoRightArrow.addEventListener("mouseleave", toggleActiveClass);
+
+	function toggleActiveClass() {
+		$videoLeftArrow.classList.toggle("visible");
+		$videoRightArrow.classList.toggle("visible");
+	}
+}
+
+function about() {
+	loadMenu();
+}
+
+function loadMenu() {
+	var $menuLinks = document.getElementsByClassName("menu-links")[0];
+
+	document.getElementsByClassName("menu-burger")[0].addEventListener("click", function (event) {
+		event.preventDefault();
+		$menuLinks.classList.toggle("visible");
+	});
 }

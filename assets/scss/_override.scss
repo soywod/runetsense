@@ -1,0 +1,13 @@
+@import "colors";
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  outline: none;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+}

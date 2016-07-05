@@ -17,7 +17,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/vendor.min.css') }}">
-	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/local.min.css') }}">
+	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/main.min.css') }}">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 	<link rel="manifest" href="{{ site.url }}/{{ theme_path('assets/manifest.json') }}">
@@ -29,6 +29,29 @@
 		to improve your experience.</p>
 	<![endif]-->
 
+	<div class="frame">
+		<nav class="menu {{ page.menu != 'home' ? 'fixed' : '' }}">
+			<div class="menu-logo">
+				<a href="/home">
+					<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense"
+					     width="200"></a>
+				<a href="#" class="menu-burger">
+					<i class="fa fa-bars"></i></a>
+			</div>
+			<ul class="menu-links">
+				<li><a href="/home" class="{{ page.menu == 'home' ? 'active' : '' }}">accueil</a></li>
+				<li><a href="/about" class="{{ page.menu == 'about' ? 'active' : '' }}">à propos</a></li>
+				<li><a href="/company" class="{{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a></li>
+				<li><a href="/sport" class="{{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a></li>
+				<li><a href="/contact" class="{{ page.menu == 'contact' ? 'active' : '' }}">contact</a></li>
+			</ul>
+		</nav>
+
+		{% block content %}
+		{% endblock %}
+	</div>
+
+	<!--
 	<div class="ui grid">
 		<div class="computer only row">
 			<nav class="ui fixed borderless menu">
@@ -70,14 +93,12 @@
 			</div>
 		</div>
 	</div>
+	-->
 
-	{% block content %}
-	{% endblock %}
+	<script src="{{ site.url }}/{{ theme_path('assets/js/main.min.js') }}"></script>
 
-	<script src="{{ site.url }}/{{ theme_path('assets/js/vendor.min.js') }}"></script>
-	<script src="{{ site.url }}/{{ theme_path('assets/js/local.min.js') }}"></script>
 	<script>
-		DOMloaded();
+		DOMLoaded("{{page.menu}}");
 	</script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
 	<script>

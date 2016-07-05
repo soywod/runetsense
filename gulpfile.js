@@ -47,7 +47,7 @@ gulp.task("vendor-css", function () {
 
 gulp.task("js", function () {
 	gulp.src(path.src.js)
-		.pipe(concat("local.min.js"))
+		.pipe(concat("main.min.js"))
 		.pipe(uglify())
 		.pipe(gulp.dest(path.dest.js))
 });
