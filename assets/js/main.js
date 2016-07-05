@@ -61,6 +61,10 @@ function about() {
 	loadMenu();
 }
 
+function contact() {
+	loadMenu();
+}
+
 function loadMenu() {
 	var $menuLinks = document.getElementsByClassName("menu-links")[0];
 

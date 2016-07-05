@@ -1,0 +1,45 @@
+---
+layout: default
+menu: contact
+---
+
+<div class="container">
+	<section class="contact">
+		<h1>Contact</h1>
+
+		<p><span class="bold">Nicolas BOURADA</span> – Run&Sense</p>
+
+		<p>
+			<i class="fa fa-phone"></i>
+			06 99 32 1234
+			<br>
+			<i class="fa fa-envelope-o"></i>
+			<a href="mailto:nbourada@runetsense.fr">
+				nbourada@runetsense.fr
+			</a>
+		</p>
+
+		<br>
+
+		<form action="/php/mail.php" method="post">
+			<label for="name">Nom complet (*)</label>
+			<input id="name" type="text" name="name" required>
+
+			<label for="email">Email (*)</label>
+			<input id="email" type="email" name="email" required>
+
+			<label for="tel">Téléphone</label>
+			<input id="tel" type="number" name="tel">
+
+			<label for="message">Message (*)</label>
+			<textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+			<div class="text-right">
+				<button type="submit">
+					Envoyer
+					<i class="fa fa-send"></i>
+				</button>
+			</div>
+		</form>
+	</section>
+</div>

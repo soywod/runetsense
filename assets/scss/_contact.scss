@@ -1,0 +1,57 @@
+@import "colors";
+@import "fonts";
+
+.contact {
+  font-family: Lato, sans-serif;
+  margin: 150px 0 15px 0;
+  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid transparentize($brown, .8);
+  box-shadow: 0 2px 7px 0 transparentize($brown, .85);
+
+  input, textarea {
+    display: block;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    border: 1px solid $lightGrey;
+    transition: border 400ms;
+    font-family: $lato;
+
+    &:focus {
+      border: 1px solid $brown;
+      outline: none;
+    }
+  }
+
+  button {
+    padding: 15px 25px;
+    background: $green;
+    color: #ffffff;
+    font-family: $lato;
+    border: 0;
+    transition: background 400ms;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background: darken($green, 6);
+    }
+  }
+
+  label {
+    color: $brown;
+
+    &:after {
+      content: " :";
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    margin-top: 80px;
+  }
+}
