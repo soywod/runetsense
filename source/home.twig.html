@@ -3,19 +3,6 @@ layout: default
 menu: home
 ---
 
-<!--
-<section id="intro" class="computer only">
-	<header>
-		<div>
-			<h1>GROS TITRE</h1>
-			<h2>Petit titre</h2>
-		</div>
-	</header>
-	<div id="video-wrap">
-		<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
-	</div>
-</section> -->
-
 <div class="ui grid">
 	<section class="computer only row home">
 		<header>
@@ -45,12 +32,12 @@ menu: home
 				</div>
 			</div>
 		</header>
-		<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
+		<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autobuffer autoplay muted loop></video>
 	</section>
 
 	<section class="tablet only mobile only row home">
 		<div class="video-wrap">
-			<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autoplay muted loop></video>
+			<video src="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}" autobuffer autoplay muted loop></video>
 			<footer>
 				<div class="ui fluid two column padded grid">
 					<div class="column">
