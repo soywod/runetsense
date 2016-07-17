@@ -35,6 +35,8 @@
  });*/
 
 function DOMLoaded(page) {
+	loadMenu();
+
 	if (typeof window[page] === "function") {
 		window[page]();
 	}
@@ -43,8 +45,6 @@ function DOMLoaded(page) {
 function home() {
 	var $videoLeftArrow  = document.getElementsByClassName("video-company")[0];
 	var $videoRightArrow = document.getElementsByClassName("video-sport")[0];
-
-	loadMenu();
 
 	$videoLeftArrow.addEventListener("mouseenter", toggleActiveClass);
 	$videoLeftArrow.addEventListener("mouseleave", toggleActiveClass);
@@ -57,12 +57,27 @@ function home() {
 	}
 }
 
-function about() {
-	loadMenu();
-}
+function sport() {
+	var video         = document.getElementsByClassName("playlist-video")[0];
+	var playlist      = document.getElementsByClassName("playlist-item");
+	var playlistLinks = document.getElementsByClassName("playlist-item-link");
+	var i             = 0;
 
-function contact() {
-	loadMenu();
+	video.setAttribute("poster", playlist[0].getAttribute("src"));
+	video.setAttribute("src", playlist[0].getAttribute("data-video"));
+
+	while (i < playlistLinks.length) {
+		var currPlaylistLink = playlistLinks[i];
+
+		currPlaylistLink.addEventListener.call(currPlaylistLink, "click", function (event) {
+			event.preventDefault();
+
+			video.setAttribute("poster", this.childNodes[1].getAttribute("src"));
+			video.setAttribute("src", this.childNodes[1].getAttribute("data-video"));
+		});
+
+		i ++;
+	}
 }
 
 function loadMenu() {

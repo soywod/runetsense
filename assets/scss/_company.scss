@@ -1,0 +1,67 @@
+@import "colors";
+@import "fonts";
+
+.company {
+  font-family: Lato, sans-serif;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  i,
+  strong {
+    color: $green;
+  }
+}
+
+.company-header-container {
+  background: $lightGrey;
+  padding: 15px 0;
+}
+
+.company-content {
+  background: $white;
+  padding: 0;
+}
+
+.company-perf-container {
+  background: $lightGrey;
+  padding: 15px 0;
+}
+
+.company-picto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.company-picto {
+  padding: 15px;
+}
+
+.company-picto-img {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.company-perf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.company-perf-left,
+.company-perf-right {
+  padding: 15px;
+
+  li {
+    margin-bottom: 10px;
+  }
+}

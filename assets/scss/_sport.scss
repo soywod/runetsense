@@ -1,0 +1,94 @@
+@import "colors";
+@import "fonts";
+
+.sport {
+  font-family: Lato, sans-serif;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  i,
+  strong {
+    color: $green;
+  }
+}
+
+.sport-header-container {
+  background: $lightGrey;
+  padding: 15px 0;
+}
+
+.sport-content {
+  background: $white;
+  padding: 0;
+}
+
+.sport-perf-container {
+  background: $lightGrey;
+  padding: 15px 0;
+}
+
+.sport-picto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.sport-picto {
+  padding: 15px;
+  max-width: 200px;
+
+  li {
+    margin-bottom: 7px;
+  }
+}
+
+.sport-picto-img {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.sport-perf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sport-perf-left,
+.sport-perf-right {
+  padding: 15px;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.playlist-container {
+  display: flex;
+  flex-flow: row;
+}
+
+.playlist-video {
+  flex: 1;
+  margin: 30px;
+}
+
+.playlist-item {
+  display: block;
+}
+
+.playlist {
+  margin: 0;
+
+  & > li {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

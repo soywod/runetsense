@@ -2,7 +2,7 @@
 
 .menu {
   background: #ffffff;
-  padding: 15px;
+  padding: 5px;
   padding-bottom: 0;
   border-bottom: 1px solid transparentize($brown, .8);
   box-shadow: 0 2px 7px 0 transparentize($brown, .85);
@@ -30,7 +30,7 @@
   a {
     display: block;
     font-family: Lato, sans-serif;
-    padding: 20px;
+    padding: 15px;
     text-transform: uppercase;
     text-decoration: none;
     color: $brown;
@@ -47,7 +47,7 @@
 }
 
 .menu-burger {
-  margin-top: 5px;
+  margin-top: 6px;
   display: none;
   float: right;
   color: $brown;

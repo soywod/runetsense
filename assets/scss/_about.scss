@@ -1,42 +1,40 @@
 @import "colors";
 
 .about {
-  font-family: Lato, sans-serif;
-  margin: 150px 0 15px 0;
-  padding: 15px;
-  background: #ffffff;
-  border-bottom: 1px solid transparentize($brown, .8);
-  box-shadow: 0 2px 7px 0 transparentize($brown, .85);
+  i,
+  strong {
+    color: $green;
+  }
 }
 
-.about-bio {
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   img {
-    float: left;
-    margin: 0 15px 15px 0;
-    border-radius: 50% 50%;
-  }
-
-  ul {
-    list-style-type: none;
-    padding-left: 1rem;
-
-    li {
-      padding: 7px;
-
-      &:before {
-        font-family: FontAwesome, sans-serif;
-        content: "\f054 \0020";
-      }
-    }
+    border-radius: 50%;
+    margin: 30px;
   }
 }
 
-.about-name {
-  font-size: 1.2rem;
+.about-content {
+  display: flex;
 }
 
-@media (max-width: 767px) {
-  .about {
-    margin-top: 80px;
-  }
+.about-content-left,
+.about-content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.about-content-right {
+  border-left: 2px dashed $green;
+  text-align: right;
+}
+
+.about-list > img {
+  margin: 5px;
 }
