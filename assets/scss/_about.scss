@@ -1,4 +1,10 @@
 @import "colors";
+@import "mixins";
+
+#about {
+  background: url(../img/grass.jpg) no-repeat bottom center;
+  background-size: cover;
+}
 
 .about {
   i,
@@ -7,34 +13,39 @@
   }
 }
 
-.about-header {
+.about-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
 
-  img {
-    border-radius: 50%;
-    margin: 30px;
+  > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin: 30px 15px 15px 15px;
+    background: $white;
+  }
+
+  h2 {
+    margin: 0 0 15px 0;
+    @include header;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    border-bottom: 1px solid $lightGrey;
+    padding: 0 0 5px 0;
+    @include header;
   }
 }
 
-.about-content {
-  display: flex;
-}
+/* ==================== MEDIA QUERIES ==================== */
 
-.about-content-left,
-.about-content-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
+@media (max-width: 767px) {
+  .about-content {
+    flex-direction: column;
 
-.about-content-right {
-  border-left: 2px dashed $green;
-  text-align: right;
-}
-
-.about-list > img {
-  margin: 5px;
+    > div:not(:first-of-type) {
+      margin-top: 15px;
+    }
+  }
 }

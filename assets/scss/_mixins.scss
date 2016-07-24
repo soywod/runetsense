@@ -1,0 +1,8 @@
+@import "colors";
+
+@mixin header() {
+  color: $green;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

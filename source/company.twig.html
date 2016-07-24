@@ -4,8 +4,8 @@ menu: company
 ---
 
 <section class="company">
-	<header class="company-header-container">
-		<div class="container">
+	<div class="container">
+		<header class="company-header">
 			<h1>
 				<i class="fa fa-industry fa-fw"></i>
 				Pour l'entreprise
@@ -30,191 +30,65 @@ menu: company
 				Cela permet de manière ludique et efficace d’exprimer nos talents et nos zones de développement
 				potentiels
 			</p>
-		</div>
-	</header>
-
-	<div class="company-content">
-		<div class="container">
-			<ul class="company-picto-container">
-				<li class="company-picto">
-					<div class="company-picto-img">
-						<img width="75"
-						     height="75"
-						     src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
-						     alt="">
-					</div>
-					<br>
-					<strong>Formations</strong><br>
-					<em>1 à 3 jours</em>
-				</li>
-				<li class="company-picto">
-					<div class="company-picto-img">
-						<img width="75"
-						     height="75"
-						     src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
-						     alt="">
-					</div>
-					<br>
-					<strong>Team Building</strong><br>
-					<em>1 à 2 jours</em>
-				</li>
-				<li class="company-picto">
-					<div class="company-picto-img">
-						<img width="75"
-						     height="75"
-						     src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
-						     alt="">
-					</div>
-					<br>
-					<strong>Conférences</strong><br>
-					<em>1h30 à 3h</em>
-				</li>
-				<li class="company-picto">
-					<div class="company-picto-img">
-						<img width="75"
-						     height="75"
-						     src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
-						     alt="">
-					</div>
-					<br>
-					<strong>Accompagnement</strong><br>
-					<em>Selon demande</em>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<footer class="company-perf-container">
-		<div class="container">
-			<div class="company-perf">
-				<div class="company-perf-left">
-					<h3>Performance individuelle</h3>
-					<ul>
-						<li>
-							<i class="fa fa-angle-right"></i> Mieux vous connaître et appréhender les différences
-						</li>
-						<li>
-							<i class="fa fa-angle-right"></i> Adapter sa communication (assertivité)
-						</li>
-						<li>
-							<i class="fa fa-angle-right"></i> Prévenir et gérer son stress
-						</li>
-						<li>
-							<i class="fa fa-angle-right"></i> Manager efficacement
-						</li>
-					</ul>
-				</div>
-				<div class="company-perf-right">
-					<h3>Performance collective</h3>
-					<ul>
-						<li>
-							<i class="fa fa-angle-right"></i> Développer la cohésion d’équipe
-						</li>
-						<li>
-							<i class="fa fa-angle-right"></i> Motiver vos collaborateurs
-						</li>
-						<li>
-							<i class="fa fa-angle-right"></i> Améliorer son leadership
-						</li>
-						<li>
-							<i class="fa fa-angle-right"></i> Gérer les conflits
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!--
-	<div class="container">
-		<header>
-			<h3>
-				Chaque intervention s’appuie sur l’association de 2 approches :
-			</h3>
-			<ul>
-				<li><strong>Action-Types</strong><em>®</em>, permettant d’identifier et de comprendre nos schémas
-					naturels
-					de
-					fonctionnement
-					physique.
-				</li>
-				<li><strong>Le MBTI</strong><em>®</em>, permettant d’identifier et de comprendre nos schémas naturels de
-					fonctionnement
-					physique.
-				</li>
-			</ul>
-			<p>
-				Des tests physiques permettent ainsi d’identifier avec la plus grande précision le profil MBTI<em>®</em>
-				de chaque intervenant, car contrairement aux questionnaires habituellement proposés,
-				<strong>le corps ne ment pas</strong>.
-				Cela permet de manière ludique et efficace d’exprimer nos talents et nos zones de développement
-				potentiels
-			</p>
 		</header>
 
-		<ul class="company-logos">
-			<li>
-				<div class="company-logo-container">
-					<img src="" alt="">
-				</div>
-				Formations<br>1 à 3 jours
+		<ul class="company-content">
+			<li class="company-content-item training">
+				<h3>formations</h3>
+				<div>1 à 3 jours</div>
 			</li>
-			<li>
-				<div class="company-logo-container">
-					<img src="" alt="">
-				</div>
-				Team Building<br>1 à 2 jours
+
+			<li class="company-content-item team-building">
+				<h3>team building</h3>
+				<div>1 à 2 jours</div>
 			</li>
-			<li>
-				<div class="company-logo-container">
-					<img src="" alt="">
-				</div>
-				Conférences<br>1h30 à 3h
+
+			<li class="company-content-item conference">
+				<h3>conférences</h3>
+				<div>1h30 à 3h</div>
 			</li>
-			<li>
-				<div class="company-logo-container">
-					<img src="" alt="">
-				</div>
-				Accompagnement<br>Selon demande
+
+			<li class="company-content-item custom">
+				<h3>accompagnement</h3>
+				<div>selon demande</div>
 			</li>
 		</ul>
 
-		<footer class="company-perf">
-			<div class="company-perf-left">
-				<h3>Performance individuelle :</h3>
+		<footer class="company-footer">
+			<div class="company-footer-item">
+				<h3>Performance individuelle</h3>
 				<ul>
 					<li>
-						Mieux vous connaître et appréhender les différences
+						<i class="fa fa-angle-right"></i> Mieux vous connaître et appréhender les différences
 					</li>
 					<li>
-						Adapter sa communication (assertivité)
+						<i class="fa fa-angle-right"></i> Adapter sa communication (assertivité)
 					</li>
 					<li>
-						Prévenir et gérer son stress
+						<i class="fa fa-angle-right"></i> Prévenir et gérer son stress
 					</li>
 					<li>
-						Manager efficacement
+						<i class="fa fa-angle-right"></i> Manager efficacement
 					</li>
 				</ul>
 			</div>
-			<div class="company-perf-right">
-				<h3>Performance collective :</h3>
+			<div class="company-footer-item">
+				<h3>Performance collective</h3>
 				<ul>
 					<li>
-						Développer la cohésion d’équipe
+						<i class="fa fa-angle-right"></i> Développer la cohésion d’équipe
 					</li>
 					<li>
-						Gérer les conflits
+						<i class="fa fa-angle-right"></i> Motiver vos collaborateurs
 					</li>
 					<li>
-						Améliorer son leadership
+						<i class="fa fa-angle-right"></i> Améliorer son leadership
 					</li>
 					<li>
-						Motiver vos collaborateurs
+						<i class="fa fa-angle-right"></i> Gérer les conflits
 					</li>
 				</ul>
 			</div>
 		</footer>
 	</div>
-	-->
 </section>

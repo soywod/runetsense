@@ -3,16 +3,10 @@
 .menu {
   background: #ffffff;
   padding: 5px;
-  padding-bottom: 0;
-  border-bottom: 1px solid transparentize($brown, .8);
-  box-shadow: 0 2px 7px 0 transparentize($brown, .85);
   z-index: 2;
-}
-
-.menu.fixed {
-  position: fixed;
-  left: 0;
-  right: 0;
+  font-size: .9rem;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
 }
 
 .menu-logo {
@@ -29,11 +23,10 @@
 
   a {
     display: block;
-    font-family: Lato, sans-serif;
     padding: 15px;
-    text-transform: uppercase;
+
     text-decoration: none;
-    color: $brown;
+    color: $black;
     transition: color 400ms;
 
     &:hover {
@@ -47,7 +40,7 @@
 }
 
 .menu-burger {
-  margin-top: 6px;
+  margin-top: 4px;
   display: none;
   float: right;
   color: $brown;

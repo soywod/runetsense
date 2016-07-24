@@ -43,6 +43,7 @@ function DOMLoaded(page) {
 }
 
 function home() {
+	/*
 	var $videoLeftArrow  = document.getElementsByClassName("video-company")[0];
 	var $videoRightArrow = document.getElementsByClassName("video-sport")[0];
 
@@ -55,12 +56,13 @@ function home() {
 		$videoLeftArrow.classList.toggle("visible");
 		$videoRightArrow.classList.toggle("visible");
 	}
+	*/
 }
 
 function sport() {
-	var video         = document.getElementsByClassName("playlist-video")[0];
-	var playlist      = document.getElementsByClassName("playlist-item");
-	var playlistLinks = document.getElementsByClassName("playlist-item-link");
+	var video         = document.getElementsByClassName("sport-video-player")[0];
+	var playlist      = document.getElementsByClassName("sport-video-playlist-item");
+	var playlistLinks = document.getElementsByClassName("sport-video-playlist-link");
 	var i             = 0;
 
 	video.setAttribute("poster", playlist[0].getAttribute("src"));

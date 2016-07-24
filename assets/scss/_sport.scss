@@ -1,5 +1,11 @@
 @import "colors";
 @import "fonts";
+@import "mixins";
+
+#sport {
+  background: url(../img/stade.jpg) no-repeat right center;
+  background-size: cover;
+}
 
 .sport {
   font-family: Lato, sans-serif;
@@ -15,80 +21,107 @@
   }
 }
 
-.sport-header-container {
-  background: $lightGrey;
-  padding: 15px 0;
+.sport-header {
+  background: $white;
+  padding: 30px;
+  margin: 45px 0 0 0;
+
+  h1 {
+    margin-top: 0;
+    @include header;
+  }
 }
 
 .sport-content {
-  background: $white;
-  padding: 0;
-}
-
-.sport-perf-container {
-  background: $lightGrey;
-  padding: 15px 0;
-}
-
-.sport-picto-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   text-align: center;
-  flex-wrap: wrap;
+  margin: 0;
 }
 
-.sport-picto {
+.sport-content-item {
+  flex: 1;
+  margin: 7px 7px 0 0;
   padding: 15px;
-  max-width: 200px;
+  color: $white;
 
-  li {
-    margin-bottom: 7px;
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    @include header;
+    color: $white;
+    margin-bottom: 0;
+
+    & + div {
+      font-style: italic;
+    }
+  }
+  
+  &.training {
+    background: #c7d54a;
+  }
+
+  &.team-building {
+    background: $green;
+  }
+
+  &.conference {
+    background: #f5a46c;
+  }
+
+  &.custom {
+    background: #7b797a;
   }
 }
 
-.sport-picto-img {
-  width: 75px;
-  height: 75px;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 50%;
+.sport-footer {
+  margin: 45px 0;
+  background: $white;
+  padding: 30px;
+
+  h2 {
+    margin-top: 0;
+    @include header;
+  }
 }
 
-.sport-perf {
+.sport-video-playlist {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;
 
-.sport-perf-left,
-.sport-perf-right {
-  padding: 15px;
+  img {
+    display: block;
+    text-align: center;
+    width: 150px;
+  }
 
   li {
-    margin-bottom: 10px;
+    max-width: 150px;
+    padding: 0 15px 15px 15px;
+    text-align: center;
   }
 }
 
-.playlist-container {
-  display: flex;
-  flex-flow: row;
-}
+/* ==================== MEDIA QUERIES ==================== */
 
-.playlist-video {
-  flex: 1;
-  margin: 30px;
-}
+@media (max-width: 991px) {
+  .sport-content {
+    flex-direction: column;
+  }
 
-.playlist-item {
-  display: block;
-}
-
-.playlist {
-  margin: 0;
-
-  & > li {
-    margin-bottom: 30px;
-    text-align: center;
+  .sport-content-item {
+    margin-right: 0;
   }
 }
