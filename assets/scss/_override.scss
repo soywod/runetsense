@@ -18,11 +18,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, sans-serif;
   color: $black;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif !important;
 }

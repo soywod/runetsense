@@ -44,19 +44,19 @@ function DOMLoaded(page) {
 
 function home() {
 	/*
-	var $videoLeftArrow  = document.getElementsByClassName("video-company")[0];
-	var $videoRightArrow = document.getElementsByClassName("video-sport")[0];
+	 var $videoLeftArrow  = document.getElementsByClassName("video-company")[0];
+	 var $videoRightArrow = document.getElementsByClassName("video-sport")[0];
 
-	$videoLeftArrow.addEventListener("mouseenter", toggleActiveClass);
-	$videoLeftArrow.addEventListener("mouseleave", toggleActiveClass);
-	$videoRightArrow.addEventListener("mouseenter", toggleActiveClass);
-	$videoRightArrow.addEventListener("mouseleave", toggleActiveClass);
+	 $videoLeftArrow.addEventListener("mouseenter", toggleActiveClass);
+	 $videoLeftArrow.addEventListener("mouseleave", toggleActiveClass);
+	 $videoRightArrow.addEventListener("mouseenter", toggleActiveClass);
+	 $videoRightArrow.addEventListener("mouseleave", toggleActiveClass);
 
-	function toggleActiveClass() {
-		$videoLeftArrow.classList.toggle("visible");
-		$videoRightArrow.classList.toggle("visible");
-	}
-	*/
+	 function toggleActiveClass() {
+	 $videoLeftArrow.classList.toggle("visible");
+	 $videoRightArrow.classList.toggle("visible");
+	 }
+	 */
 }
 
 function sport() {
@@ -80,6 +80,26 @@ function sport() {
 
 		i ++;
 	}
+}
+
+function contact() {
+	//06 99 32 1234
+	//nbourada@runetsense.fr
+	var $showPhone = document.getElementById("show-phone");
+	var $showEmail = document.getElementById("show-email");
+
+	var phone = ["!0!6#", "$9!9$", "$3!2#", "!1#2!", "$3!4$"].join(" ").replace(/[!#\$]/g, "");
+	var email = ["!n!!bo#ura#d!a$", "$run!ets#en!s!e.f!#r#"].join("@").replace(/[!#\$]/g, "");
+
+	$showPhone.addEventListener("click", function (event) {
+		event.preventDefault();
+		$showPhone.outerHTML = phone;
+	});
+
+	$showEmail.addEventListener("click", function (event) {
+		event.preventDefault();
+		$showEmail.outerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+	});
 }
 
 function loadMenu() {

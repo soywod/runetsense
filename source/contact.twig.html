@@ -3,27 +3,34 @@ layout: default
 menu: contact
 ---
 
-<section class="contact">
-	<div class="container">
+<div class="container">
+	<section class="contact-card">
 		<h1>
-			<i class="fa fa-envelope-o"></i>
+			<i class="fa fa-send fa-fw"></i>
 			Contact
 		</h1>
+		<header class="contact-card-header">
+			<img src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
+			     alt="Photo de Mr Nicolas BOURADA">
 
-		<p><span class="bold">Nicolas BOURADA</span> – Run&Sense</p>
+			<ul class="contact-card-info">
+				<li>
+					<i class="fa fa-fw fa-user"></i>
+					Mr Nicolas BOURADA
+				</li>
+				<li>
+					<i class="fa fa-fw fa-phone"></i>
+					<a href="#" id="show-phone">Afficher le téléphone</a>
+				</li>
+				<li>
+					<i class="fa fa-fw fa-envelope-o"></i>
+					<a href="#" id="show-email">Afficher l'email</a>
+				</li>
+			</ul>
+		</header>
+	</section>
 
-		<p>
-			<i class="fa fa-phone"></i>
-			06 99 32 1234
-			<br>
-			<strong>@</strong>
-			<a href="mailto:nbourada@runetsense.fr">
-				nbourada@runetsense.fr
-			</a>
-		</p>
-
-		<br>
-
+	<section class="contact-form">
 		<form action="/php/mail.php" method="post">
 			<label for="name">Nom complet (*)</label>
 			<input id="name" type="text" name="name" required>
@@ -44,5 +51,5 @@ menu: contact
 				</button>
 			</div>
 		</form>
-	</div>
-</section>
+	</section>
+</div>
