@@ -1,0 +1,26 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  > div {
+    flex: 1;
+  }
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 767px) {
+  .responsive.flex {
+    flex-direction: column;
+  }
+}

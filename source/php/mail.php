@@ -1,12 +1,12 @@
 <?php
 
-$to = 'nbourada@runetsense.fr';
+$to = 'clementdouin21@gmail.com';
 $subject = 'Prise de contact sur runetsense.fr (' . $_POST['name'] . ')';
 $message = $_POST['message'];
 $headers = 'From: ' . $_POST['email'] . "\r\n" .
 	'Reply-To: ' . $_POST['email'] . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
-mail($to, $subject, $message, $headers);
+$hasBeenSent = mail($to, $subject, $message, $headers);
 
-header('Location: /contact#sent');
+header('Location: /contact?sent=' . $hasBeenSent);

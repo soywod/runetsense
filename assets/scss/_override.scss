@@ -10,6 +10,19 @@ a:focus {
 a {
   color: $green;
   text-decoration: none;
+
+  &:hover {
+    outline: none;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 h1,
@@ -28,4 +41,8 @@ ul {
 
 body {
   font-family: 'Lato', sans-serif !important;
+}
+
+i {
+  color: $green;
 }

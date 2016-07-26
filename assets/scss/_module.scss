@@ -1,0 +1,39 @@
+@import "mixins";
+
+.module {
+  margin: 7px;
+  padding: 30px;
+  color: $black;
+  background: $white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include header;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &.inverted {
+    color: $white;
+    background: $black;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $white;
+    }
+  }
+
+  &.grey {
+    background: $lightGrey;
+  }
+}

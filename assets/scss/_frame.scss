@@ -10,4 +10,8 @@
   flex-flow: column;
   background: $lightGrey;
   overflow-y: auto;
+
+  &:not(#home) section {
+    margin-top: 23px;
+  }
 }
