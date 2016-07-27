@@ -3,16 +3,15 @@ layout: default
 menu: sport
 ---
 
-<section class="sport">
+<section>
 	<div class="container">
-		<header class="sport-header">
-			<h1>
-				<i class="fa fa-soccer-ball-o fa-fw"></i>
-				pour le sport
-			</h1>
-			<h3>
+		<header class="module">
+			<h1>pour le sport</h1>
+
+			<p class="bold">
 				Action Types® : l’approche innovante qui parle de vos préférences
-			</h3>
+			</p>
+
 			<p>
 				Action Types® est une approche fondée par Ralph HIPPOLYTE et Bertrand THERAULAZ.
 				Elle analyse votre manière préférentielle de vous mouvoir. Votre signature motrice est innée, je vous
@@ -21,93 +20,74 @@ menu: sport
 			</p>
 		</header>
 
-		<ul class="sport-content">
-			<li class="sport-content-item training">
-				<header>
-					<h3>conférences</h3>
-					<div>1h30 à 3h</div>
-				</header>
-
-				<ul>
-					<li>Qu’est ce qu’Action Types®</li>
-					<li>Identifier votre signature motrice</li>
-					<li>Son impact en compétition</li>
-				</ul>
-			</li>
-
-			<li class="sport-content-item team-building">
-				<header>
-					<h3>Diagnostic</h3>
-					<div>2h</div>
-				</header>
-
-				<ul>
-					<li>Individuel (testing + rapport)</li>
-					<li>Collectif (zones fortes et nœuds collectifs)</li>
-				</ul>
-			</li>
-
-			<li class="sport-content-item conference">
-				<header>
-					<h3>coaching / accompagnement</h3>
-					<div>1h30 à 3h</div>
-				</header>
-
-				<ul>
-					<li>Individuel (joueurs)</li>
-					<li>Staff (coach, préparateur physique)</li>
-				</ul>
-			</li>
-
-			<li class="sport-content-item custom">
-				<header>
-					<h3>accompagnement</h3>
-					<div>selon demande</div>
-				</header>
-
-				<ul>
-					<li>Améliorer sa frappe de balle</li>
-					<li>Efficacité coups de pieds arrêtés</li>
-					<li>Performance équipe</li>
-					<li>Spécifique gardien de but</li>
-				</ul>
-			</li>
-		</ul>
-
-		<footer class="sport-footer">
-			<h2>
-				<i class="fa fa-fw fa-play-circle-o"></i>
-				vidéos
-			</h2>
-			<div class="sport-video-container">
-				<video class="sport-video-player" poster="" src="" width="100%" controls></video>
-				<ul class="sport-video-playlist">
-					<li>
-						<a href="#" class="sport-video-playlist-link">
-							<img class="sport-video-playlist-item"
-							     src="{{ site.url }}/{{ theme_path('assets/img/about.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
-							Intro de malade de ouf lol yeah yayay
-						</a>
-					</li>
-					<li>
-						<a href="#" class="sport-video-playlist-link">
-							<img class="sport-video-playlist-item"
-							     src="{{ site.url }}/{{ theme_path('assets/img/company.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
-							Video 1
-						</a>
-					</li>
-					<li>
-						<a href="#" class="sport-video-playlist-link">
-							<img class="sport-video-playlist-item"
-							     src="{{ site.url }}/{{ theme_path('assets/img/sport.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
-							Video 2
-						</a>
-					</li>
-				</ul>
+		<div class="responsive tablet flex">
+			<div class="responsive large mobile flex">
+				<div class="column flex">
+					<div class="center flex conference sport inverted module">
+						<div class="text-center">
+							<i class="sport-icon fa fa-television fa-3x"></i>
+							<h3>conférences</h3>
+							<div>1h30 à 3h</div>
+						</div>
+					</div>
+					<div class="center flex coaching sport inverted module">
+						<div class="text-center">
+							<i class="sport-icon fa fa-line-chart fa-3x"></i>
+							<h3>coaching</h3>
+						</div>
+					</div>
+				</div>
+				<div class="column flex">
+					<div class="center flex diagnostic sport inverted module">
+						<div class="text-center">
+							<i class="sport-icon fa fa-heartbeat fa-3x"></i>
+							<h3>diagnostic</h3>
+							<div>2h</div>
+						</div>
+					</div>
+					<div class="center flex football sport inverted module">
+						<div class="text-center">
+							<i class="sport-icon fa fa-futbol-o fa-3x"></i>
+							<h3>spécifique foot</h3>
+						</div>
+					</div>
+				</div>
 			</div>
-		</footer>
+			<div>
+				<div class="center responsive medium mobile flex module">
+					<div>
+						<video class="sport-player" poster="" src="" width="100%" controls></video>
+					</div>
+					<div class="sport-playlist flex-item-auto">
+						<ul class="column center flex">
+							<li>
+								<a href="#" class="sport-playlist-link">
+									<img class="sport-playlist-item"
+									     src="{{ site.url }}/{{ theme_path('assets/img/about.jpg') }}"
+									     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
+									Intro de malade de ouf lol yeah yayay
+								</a>
+							</li>
+							<li>
+								<a href="#" class="sport-playlist-link">
+									<img class="sport-playlist-item"
+									     src="{{ site.url }}/{{ theme_path('assets/img/company.jpg') }}"
+									     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
+									Video 1
+								</a>
+							</li>
+							<li>
+								<a href="#" class="sport-playlist-link">
+									<img class="sport-playlist-item"
+									     src="{{ site.url }}/{{ theme_path('assets/img/sport.jpg') }}"
+									     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
+									Video 2
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>

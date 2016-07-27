@@ -60,9 +60,9 @@ function home() {
 }
 
 function sport() {
-	var video         = document.getElementsByClassName("sport-video-player")[0];
-	var playlist      = document.getElementsByClassName("sport-video-playlist-item");
-	var playlistLinks = document.getElementsByClassName("sport-video-playlist-link");
+	var video         = document.getElementsByClassName("sport-player")[0];
+	var playlist      = document.getElementsByClassName("sport-playlist-item");
+	var playlistLinks = document.getElementsByClassName("sport-playlist-link");
 	var i             = 0;
 
 	video.setAttribute("poster", playlist[0].getAttribute("src"));
