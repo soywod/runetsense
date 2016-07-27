@@ -8,6 +8,12 @@
 }
 
 .sport.module {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   h3 {
     margin: 0;
 
@@ -57,13 +63,18 @@
   padding: 7px 0;
 }
 
-
 @media only screen and (max-width: 479px) {
+  .sport-playlist ul {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
   .sport-playlist {
     display: block;
+  }
 
-    ul {
-      margin: 0;
-    }
+  .sport.module {
+    height: 75px;
   }
 }

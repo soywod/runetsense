@@ -65,6 +65,23 @@ function sport() {
 	var playlistLinks = document.getElementsByClassName("sport-playlist-link");
 	var i             = 0;
 
+	var conference = document.getElementsByClassName("conference")[0];
+	var coaching   = document.getElementsByClassName("coaching")[0];
+	var diagnostic = document.getElementsByClassName("diagnostic")[0];
+	var football   = document.getElementsByClassName("football")[0];
+
+	var metaConferenceOrigin = document.getElementsByClassName("meta-conference-origin")[0];
+	var metaCoachingOrigin   = document.getElementsByClassName("meta-coaching-origin")[0];
+	var metaDiagnosticOrigin = document.getElementsByClassName("meta-diagnostic-origin")[0];
+	var metaFootballOrigin   = document.getElementsByClassName("meta-football-origin")[0];
+
+	var metaConference = document.getElementsByClassName("meta-conference")[0];
+	var metaCoaching   = document.getElementsByClassName("meta-coaching")[0];
+	var metaDiagnostic = document.getElementsByClassName("meta-diagnostic")[0];
+	var metaFootball   = document.getElementsByClassName("meta-football")[0];
+
+	var tmp;
+
 	video.setAttribute("poster", playlist[0].getAttribute("src"));
 	video.setAttribute("src", playlist[0].getAttribute("data-video"));
 
@@ -79,6 +96,46 @@ function sport() {
 		});
 
 		i ++;
+	}
+
+	conference.addEventListener("mouseenter", activateModule.bind(conference, metaConference));
+	conference.addEventListener("click", toggleModule.bind(conference, metaConferenceOrigin, metaConference));
+	conference.addEventListener("mouseleave", desactivateModule.bind(conference, metaConferenceOrigin));
+
+	coaching.addEventListener("mouseenter", activateModule.bind(coaching, metaCoaching));
+	coaching.addEventListener("click", toggleModule.bind(coaching, metaCoachingOrigin, metaCoaching));
+	coaching.addEventListener("mouseleave", desactivateModule.bind(coaching, metaCoachingOrigin));
+
+	diagnostic.addEventListener("mouseenter", activateModule.bind(diagnostic, metaDiagnostic));
+	diagnostic.addEventListener("click", toggleModule.bind(diagnostic, metaDiagnosticOrigin, metaDiagnostic));
+	diagnostic.addEventListener("mouseleave", desactivateModule.bind(diagnostic, metaDiagnosticOrigin));
+
+	football.addEventListener("mouseenter", activateModule.bind(football, metaFootball));
+	football.addEventListener("click", toggleModule.bind(football, metaFootballOrigin, metaFootball));
+	football.addEventListener("mouseleave", desactivateModule.bind(football, metaFootballOrigin));
+
+	conference.innerHTML = metaConferenceOrigin.innerHTML;
+	coaching.innerHTML = metaCoachingOrigin.innerHTML;
+	diagnostic.innerHTML = metaDiagnosticOrigin.innerHTML;
+	football.innerHTML = metaFootballOrigin.innerHTML;
+
+	function activateModule(meta) {
+		this.setAttribute("data-active", "");
+		this.innerHTML = meta.innerHTML;
+	}
+
+	function toggleModule(metaOrigin, meta) {
+		if (this.hasAttribute("data-active")) {
+			desactivateModule.call(this, metaOrigin);
+		}
+		else {
+			activateModule.call(this, meta);
+		}
+	}
+
+	function desactivateModule(metaOrigin) {
+		this.removeAttribute("data-active");
+		this.innerHTML = metaOrigin.innerHTML;
 	}
 }
 
