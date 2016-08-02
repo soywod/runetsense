@@ -43,57 +43,14 @@
 				<li><a href="/about" class="{{ page.menu == 'about' ? 'active' : '' }}">à propos</a></li>
 				<li><a href="/company" class="{{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a></li>
 				<li><a href="/sport" class="{{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a></li>
-				<li><a href="/contact" class="{{ page.menu == 'contact' ? 'active' : '' }}">contact</a></li>
+				<li><a href="/approach" class="{{ page.menu == 'approach' ? 'active' : '' }}">l'approche</a></li>
+				<li><a href="/contact" class="{{ page.menu == 'contact' ? 'active' : '' }}">me contacter</a></li>
 			</ul>
 		</nav>
 
 		{% block content %}
 		{% endblock %}
 	</div>
-
-	<!--
-	<div class="ui grid">
-		<div class="computer only row">
-			<nav class="ui fixed borderless menu">
-				<a href="/" class="logo item">
-					<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense"
-					     width="150px">
-				</a>
-
-				<div class="right item">
-					<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
-					<a href="" class="item {{ page.menu == 'about' ? 'active' : '' }}">à propos</a>
-					<a href="" class="item {{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a>
-					<a href="" class="item {{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a>
-					<a href="" class="item {{ page.menu == 'contact' ? 'active' : '' }}">contact</a>
-				</div>
-			</nav>
-		</div>
-
-		<div class="tablet only mobile only row">
-			<div class="ui fixed borderless navbar menu">
-				<a href="/" class="logo item">
-					<img class="ui" src="{{ site.url }}/{{ theme_path('assets/img/logo.png') }}" alt="Logo de Run&Sense"
-					     width="125px">
-				</a>
-
-				<div class="right menu open">
-					<a href="" class="menu icon item">
-						<i class="content big secondary icon"></i>
-					</a>
-				</div>
-			</div>
-
-			<div class="ui vertical navbar fluid menu" style="display: none">
-				<a href="" class="item {{ page.menu == 'home' ? 'active' : '' }}">accueil</a>
-				<a href="" class="item {{ page.menu == 'about' ? 'active' : '' }}">à propos</a>
-				<a href="" class="item {{ page.menu == 'company' ? 'active' : '' }}">pour l'entreprise</a>
-				<a href="" class="item {{ page.menu == 'sport' ? 'active' : '' }}">pour le sport</a>
-				<a href="" class="item {{ page.menu == 'contact' ? 'active' : '' }}">contact</a>
-			</div>
-		</div>
-	</div>
-	-->
 
 	<script src="{{ site.url }}/{{ theme_path('assets/js/main.min.js') }}"></script>
 

@@ -5,12 +5,78 @@ menu: about
 
 <section>
 	<div class="container">
+		<div class="column flex module">
+			<div class="about-card center flex">
+				<div class="flex-item-auto">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
+					     class="about-photo"
+					     alt="Photo de Mr Nicolas BOURADA"
+					     width="150"
+					     height="150">
+
+				</div>
+				<div>
+					<h1>Nicolas BOURADA</h1>
+					<div>Fondateur de la société <strong>Run&Sense</strong></div>
+					<ul>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Détecte les potentiels
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Agit sur la performance individuelle et collective
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="about-contact">
+						<li>
+							<i class="fa fa-fw fa-phone"></i>
+							<a href="#" id="show-phone">Afficher le téléphone</a>
+						</li>
+						<li>
+							<i class="fa fa-fw fa-envelope-o"></i>
+							<a href="#" id="show-email">Afficher l'email</a>
+						</li>
+						<li>
+							<i class="fa fa-fw fa-share"></i>
+							<a href="/contact">Me contacter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div>
+				<p>Nicolas bénéficie d’une expérience à la fois dans le milieu du sport et de l’entreprise.</p>
+
+				<p>
+					Dans chaque domaine il a été amené à vivre et à observer des situations
+					d’<strong>échecs</strong> ou de <strong>réussite</strong>.
+				</p>
+
+				<p>
+					Très souvent la clé du succès réside dans la connaissance de soi et de son schéma préférentiel.
+					<br> Par extension dans une équipe, un coach ou un manager devra savoir identifier les modes de
+					fonctionnement préférentiels de chaque individu afin de révéler leur potentiel, les amenant
+					ainsi à la réussite individuelle et collective.
+				</p>
+
+				<p>
+					Aujourd’hui Nicolas consacre toute son énergie dans l’accompagnement de collaborateurs,
+					managers, sportifs, entraineurs… Il s’appuie entre autres sur les outils <strong>MBTI®</strong>
+					et <strong>Action Types®</strong>, afin d’identifier les schémas préférentiels de chaque
+					individu, et les amener de la manière la plus efficiente à la performance.
+				</p>
+			</div>
+		</div>
+
 		<div class="responsive large mobile flex">
 			<div class="module">
 				<header>
 					<h2><a href="/company">entreprise</a></h2>
 
-					<img src="{{ site.url }}/{{ theme_path('assets/img/nicolas-company.jpg') }}"
+					<img src="{{ site.url }}/{{ theme_path('assets/img/company.png') }}"
 					     alt="Nicolas Bourada en entreprise"
 					     width="100%">
 				</header>
@@ -18,15 +84,23 @@ menu: about
 				<h4>Formations et diplômes</h4>
 
 				<ul>
-					<li><i class="fa fa-fw fa-angle-right"></i> Certifié MBTI®</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Diplômé de Master Marketing et Management</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Formation de formateur</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Master 2 en Marketing et Management
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Certifié MBTI®
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Formation de formateur
+					</li>
 				</ul>
 
-				<br>
 				<h4>Parcours</h4>
 
-				<p>13 années passées dans les secteurs bancaires et assurantiels :</p>
+				<p>13 années d’expérience au sein de grands groupe bancaires et assurance</p>
 
 				<ul class="responsive medium mobile center text-center flex">
 					<li class="about-logo">
@@ -46,10 +120,22 @@ menu: about
 				<h4>Fonctions exercées</h4>
 
 				<ul>
-					<li><i class="fa fa-fw fa-angle-right"></i> Commercial</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Responsable commercial</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Formateur</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Conférencier</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Responsable commercial
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Formateur
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Conférencier
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Consultant
+					</li>
 				</ul>
 			</div>
 
@@ -57,7 +143,7 @@ menu: about
 				<header>
 					<h2><a href="/sport">sport</a></h2>
 
-					<img src="{{ site.url }}/{{ theme_path('assets/img/nicolas-sport.jpg') }}"
+					<img src="{{ site.url }}/{{ theme_path('assets/img/sport.png') }}"
 					     alt="Nicolas Bourada au sport"
 					     width="100%">
 				</header>
@@ -65,19 +151,56 @@ menu: about
 				<h4>Formations et diplômes</h4>
 
 				<ul>
-					<li><i class="fa fa-fw fa-angle-right"></i> Master 2 STAPS</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Brevet d’Etat 1er degré football</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Certifié Action Types®</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> Certifié FMS®</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Brevet d’Etat 1er degré football
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Certifié Action Types ®
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Certifié FMS®
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Master en Sciences et Techniques des Activités Physiques et sportives (STAPS)
+					</li>
 				</ul>
 
 				<h4>Parcours</h4>
 
 				<ul>
-					<li><i class="fa fa-fw fa-angle-right"></i> Educateur sportif football</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> 20 ans de pratique du football</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> depuis 2003</li>
-					<li><i class="fa fa-fw fa-angle-right"></i> 4 ans d’arts martiaux</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						20 ans de pratique de football en compétition
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Golf depuis 2003
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						4 ans d’arts martiaux (wing chun, Jeet Kune Do)
+					</li>
+				</ul>
+
+				<h4>Fonctions exercées</h4>
+
+				<ul>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Educateur sportif
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Consultant
+					</li>
+					<li>
+						<i class="fa fa-fw fa-angle-right"></i>
+						Animateur de stages pour obtention du Brevet d’Etat
+					</li>
 				</ul>
 			</div>
 		</div>

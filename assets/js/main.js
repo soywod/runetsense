@@ -139,9 +139,7 @@ function sport() {
 	}
 }
 
-function contact() {
-	//06 99 32 1234
-	//nbourada@runetsense.fr
+function about() {
 	var $showPhone = document.getElementById("show-phone");
 	var $showEmail = document.getElementById("show-email");
 
