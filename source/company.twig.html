@@ -35,86 +35,258 @@ menu: company
 		</header>
 
 		<div class="responsive tablet flex">
-			<div class="responsive large mobile flex">
-				<div class="column flex">
-					<div class="center flex training company inverted module">
-						<div class="text-center">
-							<i class="company-icon fa fa-graduation-cap fa-3x"></i>
-							<h3>formations</h3>
-							<div>1 à 3 jours</div>
-						</div>
-					</div>
-					<div class="center flex team-building company inverted module">
-						<div class="text-center">
-							<i class="company-icon fa fa-cogs fa-3x"></i>
-							<h3>team building</h3>
-							<div>1 à 2 jours</div>
-						</div>
-					</div>
+			<div class="center flex company transparent module" data-slide="#training">
+				<div class="text-center ">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/training.png') }}"
+					     width="100"
+					     height="100"
+					     class="company-icon training"
+					     alt="Icône de formation">
+					<h3 class="text-white">formations</h3>
+					<div class="text-white">1 à 3 jours</div>
 				</div>
-				<div class="column flex">
-					<div class="center flex conference company inverted module">
-						<div class="text-center">
-							<i class="company-icon fa fa-television fa-3x"></i>
-							<h3>conférences</h3>
-							<div>1h30 à 3h</div>
-						</div>
-					</div>
-					<div class="center flex custom company inverted module">
-						<div class="text-center">
-							<i class="company-icon fa fa-share-alt fa-3x"></i>
-							<h3>accompagnement</h3>
-							<div>selon demande</div>
-						</div>
-					</div>
+			</div>
+			<div class="center flex company transparent module" data-slide="#team-building">
+				<div class="text-center">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/training.png') }}"
+					     width="100"
+					     height="100"
+					     class="company-icon team-building"
+					     alt="Icône de formation">
+					<h3 class="text-white">team building</h3>
+					<div class="text-white">1 à 2 jours</div>
 				</div>
+			</div>
+			<div class="center flex company transparent module" data-slide="#conference">
+				<div class="text-center">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/conference.svg') }}"
+					     width="100"
+					     height="100"
+					     class="company-icon conference"
+					     alt="Icône de formation">
+					<h3 class="text-white">conférences</h3>
+					<div class="text-white">1h30 à 3h</div>
+				</div>
+			</div>
+			<div class="center flex company transparent module" data-slide="#custom">
+				<div class="text-center">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/training.png') }}"
+					     width="100"
+					     height="100"
+					     class="company-icon custom"
+					     alt="Icône de formation">
+					<h3 class="text-white">accompagnement</h3>
+					<div class="text-white">selon demande</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider" id="training" style="display: none;">
+			<div class="flex column center text-center module">
+				<h3 class="text-black no-margin">
+					<a href="#" data-modal="#module-1">Connaissance de soi</a>
+				</h3>
+				<div><em>- 1 jour -</em></div>
+			</div>
+			<div class="center black text-center flex">
+				<i class="fa text-white fa-plus fa-4x"></i>
 			</div>
 			<div class="flex">
 				<div class="module">
-					<h3 class="text-black">Performance individuelle</h3>
-
+					<h3 class="text-black">performance individuelle</h3>
 					<ul>
 						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Mieux vous connaître et appréhender les différences</a>
+							<a href="#" data-modal="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Connaissance de soi optimisée
+							</a>
 						</li>
 						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Adapter sa communication (assertivité)</a>
-						</li>
-						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Prévenir et gérer son stress</a>
-						</li>
-						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Manager efficacement</a>
+							<a href="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Prévenir et gérer son stress
+							</a>
 						</li>
 					</ul>
-
-					<h3 class="text-black">Performance collective</h3>
-
+				</div>
+				<div class="module">
+					<h3 class="text-black">performance collective</h3>
 					<ul>
 						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Développer la cohésion d’équipe</a>
-
+							<a href="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Adaptez votre communication
+							</a>
 						</li>
 						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Motiver vos collaborateurs</a>
+							<a href="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Développer la cohésion d’équipe
+							</a>
 						</li>
 						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Améliorer son leadership</a>
+							<a href="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Gestion des conflits et des émotions
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="module">
+					<h3 class="text-black">performance managériale</h3>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Améliorez votre leadership
+							</a>
 						</li>
 						<li>
-							<i class="fa fa-fw fa-angle-right"></i>
-							<a href="#">Gérer les conflits</a>
+							<a href="#">
+								<i class="fa fa-fw fa-angle-right"></i>
+								Motivez vos collaborateurs
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
+
+		<div class="slider" id="team-building" style="display: none;">
+			<div class="flex center module">
+				<div>
+					<h3>Durée : 1/2j à 2 jours</h3>
+
+					<p>
+						Souvent proposés sous forme de séminaires, les team building ont comme principal objectif le
+						rapprochement des équipes afin de mieux travailler ensemble.
+					</p>
+
+					<h4>Principales demandes</h4>
+
+					<ul>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Trouver une cohésion d’équipe suite à un changement récent (fusion – scission)
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Améliorer la communication entre les collaborateurs au sein d’une équipe
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Prévenir et gérer les conflits
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Mobiliser chaque collaborateur au lancement d’un nouveau plan d’action commercial (PAC)
+						</li>
+					</ul>
+
+					<p>
+						<em>Nous intervenons seuls ou en co-animation avec des experts partenaires, ceci permettant de
+							varier les approches en cas de durée plus longue de séminaire.</em>
+					</p>
+
+					<p>
+						<em>Chaque animation peut avoir lieu en salle (exercices pratiques) et/ou en extérieur
+							(exercices ludiques)</em>
+					</p>
+				</div>
+
+				<div class="flex-item-auto">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/team-building.jpg') }}"
+					     alt="" width="400">
+				</div>
+			</div>
+		</div>
+
+		<div class="slider" id="conference" style="display: none;">
+			<div class="flex center module">
+				<div>
+					<h3>Durée : 1h à 3h</h3>
+
+					<p>
+						Vous hésitez dans vos choix de formation ou de team building ? Privilégiez le mode conférence
+						afin d’obtenir les réponses à toutes vos questions.
+					</p>
+
+					<p>
+						Chaque intervention permet de découvrir l’approche Action Types® mais surtout de vivre
+						l’expérience du testing physique car les conférences sont interactives.
+					</p>
+
+					<h4>Principales demandes</h4>
+
+					<ul>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Trouver un aspect plus ludique dans nos formations
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Motiver et impliquer le collaborateur dans son cursus de formation
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Mieux se connaître pour être plus efficace
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Retrouver bien être et plaisir dans notre métier au quotidien
+						</li>
+					</ul>
+				</div>
+
+				<div class="flex-item-auto">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/conference.jpg') }}"
+					     alt="" width="400">
+				</div>
+			</div>
+		</div>
+
+		<div class="module slider flex" id="custom" style="display:none;">
+			custom
+		</div>
 	</div>
 </section>
+
+<div id="module-1" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 jour</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Mieux comprendre son mode de fonctionnement préférentiel
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Introduction aux approches utilisées : préférences motrices et cognitives sont liées.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Connaître son type de personnalité
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Prise de conscience des différentes interactions via les 16 typologies de personnalité du MBTI®.
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>

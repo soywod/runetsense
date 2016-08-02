@@ -1,0 +1,32 @@
+@import "colors";
+@import "mixins";
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparentize($white, .035);
+  z-index: 100;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include header;
+  }
+
+  & > div {
+    max-width: 768px;
+  }
+
+  & > span {
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+}

@@ -52,10 +52,16 @@
 		{% endblock %}
 	</div>
 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	        crossorigin="anonymous">
+	</script>
 	<script src="{{ site.url }}/{{ theme_path('assets/js/main.min.js') }}"></script>
 
 	<script>
-		DOMLoaded("{{page.menu}}");
+		$(function() {
+			DOMLoaded("{{page.menu}}");
+		});
 	</script>
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
 	<script>

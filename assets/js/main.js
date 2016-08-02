@@ -157,6 +157,20 @@ function about() {
 	});
 }
 
+function company() {
+	loadModals();
+
+	$(".company").click(function(event) {
+		event.preventDefault();
+
+		var slide = $(this).attr("data-slide");
+
+		$(".slider").not(slide).slideUp(200);
+		$(slide).slideToggle(200);
+	});
+
+}
+
 function loadMenu() {
 	var $menuLinks = document.getElementsByClassName("menu-links")[0];
 
@@ -164,4 +178,18 @@ function loadMenu() {
 		event.preventDefault();
 		$menuLinks.classList.toggle("visible");
 	});
+}
+
+function loadModals() {
+	$("[data-modal]").click(function(event) {
+		event.preventDefault();
+
+		var $this = $(this);
+
+		$($this.attr("data-modal")).fadeIn(200);
+	});
+
+	$(".modal > span").click(function() {
+		$(this).parent().fadeOut(200);
+	})
 }
