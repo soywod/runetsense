@@ -61,6 +61,7 @@ function home() {
 
 function sport() {
 	var $video         = $(".sport-player");
+	var $sports        = $(".sport");
 	var $playlist      = $(".sport-playlist-item");
 	var $playlistLinks = $(".sport-playlist-link");
 
@@ -80,28 +81,52 @@ function sport() {
 			.html($elem.attr("data-label"));
 	}
 
-	/*
-	 var video         = document.getElementsByClassName("sport-player")[0];
-	 var playlist      = document.getElementsByClassName("sport-playlist-item");
-	 var playlistLinks = document.getElementsByClassName("sport-playlist-link");
-	 var i             = 0;
+	$sports
+		.on("click", function (event) {
+			event.preventDefault();
 
-	 video.setAttribute("poster", playlist[0].getAttribute("src"));
-	 video.setAttribute("src", playlist[0].getAttribute("data-video"));
+			var $this = $(this);
+			var slide = $this.attr("data-slide");
+			var $icon = $this.find(".sport-icon");
 
-	 while (i < playlistLinks.length) {
-	 var currPlaylistLink = playlistLinks[i];
+			$(".slider").not(slide).slideUp(200);
+			$(slide).slideToggle(200);
+			$sports.removeClass("active");
+			$this.toggleClass("active");
+			$(".sport-icon").not($icon).each(function (index, item) {
+				var $item = $(item);
 
-	 currPlaylistLink.addEventListener.call(currPlaylistLink, "click", function (event) {
-	 event.preventDefault();
+				$item.attr("src", $item.attr("data-src"));
+			});
+		})
+		.on("mouseenter", function () {
+			var $this = $(this);
 
-	 video.setAttribute("poster", this.childNodes[1].getAttribute("src"));
-	 video.setAttribute("src", this.childNodes[1].getAttribute("data-video"));
-	 });
+			if (! $this.hasClass("active")) {
+				var $picto = $this.find(".sport-icon");
+				$picto.attr("src", $picto.attr("data-src-active"));
+			}
+		})
+		.on("mouseleave", function () {
+			var $this = $(this);
 
-	 i ++;
-	 }
-	 */
+			if (! $this.hasClass("active")) {
+				var $picto = $this.find(".sport-icon");
+				$picto.attr("src", $picto.attr("data-src"));
+			}
+		});
+
+	function swapSrc() {
+		var $this = $(this);
+
+		if (! $this.hasClass("active")) {
+			var $picto = $this.find(".company-icon");
+			var old    = $picto.attr("src");
+
+			$picto.attr("src", $picto.attr("data-src-active"));
+			$picto.attr("data-src-active", old);
+		}
+	}
 }
 
 function about() {
@@ -139,7 +164,7 @@ function company() {
 			$(slide).slideToggle(200);
 			$companies.removeClass("active");
 			$this.toggleClass("active");
-			$(".company-icon").not($icon).each(function(index, item) {
+			$(".company-icon").not($icon).each(function (index, item) {
 				var $item = $(item);
 
 				$item.attr("src", $item.attr("data-src"));
