@@ -50,6 +50,24 @@
 
 		{% block content %}
 		{% endblock %}
+
+		{% if page.menu != 'home' %}
+		<div class="container">
+			<footer class="frame-footer text-center">
+				<span class="float-left">
+					Développé par <a href="https://soywood.fr" target="_blank">Soywod</a>
+				</span>
+				<span>
+					COPYRIGHT © BY RUN&SENSE. ALL RIGHTS RESERVED
+				</span>
+				<span class="float-right">
+					<a href="#" target="_blank" class="frame-footer-social"><i class="fa fa-facebook"></i></a>
+					<a href="#" target="_blank" class="frame-footer-social"><i class="fa fa-twitter"></i></a>
+					<a href="#" target="_blank" class="frame-footer-social"><i class="fa fa-google-plus"></i></a>
+				</span>
+			</footer>
+		</div>
+		{% endif %}
 	</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -59,7 +77,7 @@
 	<script src="{{ site.url }}/{{ theme_path('assets/js/main.min.js') }}"></script>
 
 	<script>
-		$(function() {
+		$(function () {
 			DOMLoaded("{{page.menu}}");
 		});
 	</script>

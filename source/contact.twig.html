@@ -6,26 +6,32 @@ menu: contact
 <section class="contact">
 	<div class="container">
 		<div class="flex module">
-			<form action="/php/mail.php" method="post">
-				<label for="name">Nom complet (*)</label>
-				<input id="name" type="text" name="name" required>
+			<div>
+				<h1>contact</h1>
 
-				<label for="email">Email (*)</label>
-				<input id="email" type="email" name="email" required>
+				<br>
 
-				<label for="tel">Téléphone</label>
-				<input id="tel" type="number" name="tel">
+				<form action="/php/mail.php" method="post">
+					<label for="name">Nom complet (*)</label>
+					<input id="name" type="text" name="name" required>
 
-				<label for="message">Message (*)</label>
-				<textarea name="message" id="message" cols="30" rows="10" required></textarea>
+					<label for="email">Email (*)</label>
+					<input id="email" type="email" name="email" required>
 
-				<div class="text-right">
-					<button type="submit">
-						<i class="fa fa-fw fa-send"></i>
-						Envoyer
-					</button>
-				</div>
-			</form>
+					<label for="tel">Téléphone</label>
+					<input id="tel" type="number" name="tel">
+
+					<label for="message">Message (*)</label>
+					<textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+					<div class="text-right">
+						<button type="submit">
+							<i class="fa fa-fw fa-send"></i>
+							Envoyer
+						</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </section>
