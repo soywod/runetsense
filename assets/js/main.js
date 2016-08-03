@@ -60,83 +60,48 @@ function home() {
 }
 
 function sport() {
-	var video         = document.getElementsByClassName("sport-player")[0];
-	var playlist      = document.getElementsByClassName("sport-playlist-item");
-	var playlistLinks = document.getElementsByClassName("sport-playlist-link");
-	var i             = 0;
+	var $video         = $(".sport-player");
+	var $playlist      = $(".sport-playlist-item");
+	var $playlistLinks = $(".sport-playlist-link");
 
-	var conference = document.getElementsByClassName("conference")[0];
-	var coaching   = document.getElementsByClassName("coaching")[0];
-	var diagnostic = document.getElementsByClassName("diagnostic")[0];
-	var football   = document.getElementsByClassName("football")[0];
+	changeVideo($($playlist[0]));
 
-	var metaConferenceOrigin = document.getElementsByClassName("meta-conference-origin")[0];
-	var metaCoachingOrigin   = document.getElementsByClassName("meta-coaching-origin")[0];
-	var metaDiagnosticOrigin = document.getElementsByClassName("meta-diagnostic-origin")[0];
-	var metaFootballOrigin   = document.getElementsByClassName("meta-football-origin")[0];
+	$playlistLinks.click(function (event) {
+		event.preventDefault();
 
-	var metaConference = document.getElementsByClassName("meta-conference")[0];
-	var metaCoaching   = document.getElementsByClassName("meta-coaching")[0];
-	var metaDiagnostic = document.getElementsByClassName("meta-diagnostic")[0];
-	var metaFootball   = document.getElementsByClassName("meta-football")[0];
+		changeVideo($(this).find("> .sport-playlist-item"));
+	});
 
-	var tmp;
-
-	video.setAttribute("poster", playlist[0].getAttribute("src"));
-	video.setAttribute("src", playlist[0].getAttribute("data-video"));
-
-	while (i < playlistLinks.length) {
-		var currPlaylistLink = playlistLinks[i];
-
-		currPlaylistLink.addEventListener.call(currPlaylistLink, "click", function (event) {
-			event.preventDefault();
-
-			video.setAttribute("poster", this.childNodes[1].getAttribute("src"));
-			video.setAttribute("src", this.childNodes[1].getAttribute("data-video"));
-		});
-
-		i ++;
+	function changeVideo($elem) {
+		$video
+			.attr("poster", $elem.attr("src"))
+			.attr("src", $elem.attr("data-video"))
+			.find("+div")
+			.html($elem.attr("data-label"));
 	}
 
-	conference.addEventListener("mouseenter", activateModule.bind(conference, metaConference));
-	conference.addEventListener("click", toggleModule.bind(conference, metaConferenceOrigin, metaConference));
-	conference.addEventListener("mouseleave", desactivateModule.bind(conference, metaConferenceOrigin));
+	/*
+	 var video         = document.getElementsByClassName("sport-player")[0];
+	 var playlist      = document.getElementsByClassName("sport-playlist-item");
+	 var playlistLinks = document.getElementsByClassName("sport-playlist-link");
+	 var i             = 0;
 
-	coaching.addEventListener("mouseenter", activateModule.bind(coaching, metaCoaching));
-	coaching.addEventListener("click", toggleModule.bind(coaching, metaCoachingOrigin, metaCoaching));
-	coaching.addEventListener("mouseleave", desactivateModule.bind(coaching, metaCoachingOrigin));
+	 video.setAttribute("poster", playlist[0].getAttribute("src"));
+	 video.setAttribute("src", playlist[0].getAttribute("data-video"));
 
-	diagnostic.addEventListener("mouseenter", activateModule.bind(diagnostic, metaDiagnostic));
-	diagnostic.addEventListener("click", toggleModule.bind(diagnostic, metaDiagnosticOrigin, metaDiagnostic));
-	diagnostic.addEventListener("mouseleave", desactivateModule.bind(diagnostic, metaDiagnosticOrigin));
+	 while (i < playlistLinks.length) {
+	 var currPlaylistLink = playlistLinks[i];
 
-	football.addEventListener("mouseenter", activateModule.bind(football, metaFootball));
-	football.addEventListener("click", toggleModule.bind(football, metaFootballOrigin, metaFootball));
-	football.addEventListener("mouseleave", desactivateModule.bind(football, metaFootballOrigin));
+	 currPlaylistLink.addEventListener.call(currPlaylistLink, "click", function (event) {
+	 event.preventDefault();
 
-	conference.innerHTML = metaConferenceOrigin.innerHTML;
-	coaching.innerHTML = metaCoachingOrigin.innerHTML;
-	diagnostic.innerHTML = metaDiagnosticOrigin.innerHTML;
-	football.innerHTML = metaFootballOrigin.innerHTML;
+	 video.setAttribute("poster", this.childNodes[1].getAttribute("src"));
+	 video.setAttribute("src", this.childNodes[1].getAttribute("data-video"));
+	 });
 
-	function activateModule(meta) {
-		this.setAttribute("data-active", "");
-		this.innerHTML = meta.innerHTML;
-	}
-
-	function toggleModule(metaOrigin, meta) {
-		if (this.hasAttribute("data-active")) {
-			desactivateModule.call(this, metaOrigin);
-		}
-		else {
-			activateModule.call(this, meta);
-		}
-	}
-
-	function desactivateModule(metaOrigin) {
-		this.removeAttribute("data-active");
-		this.innerHTML = metaOrigin.innerHTML;
-	}
+	 i ++;
+	 }
+	 */
 }
 
 function about() {
@@ -160,13 +125,18 @@ function about() {
 function company() {
 	loadModals();
 
-	$(".company").click(function(event) {
+	var $companies = $(".company");
+
+	$companies.click(function (event) {
 		event.preventDefault();
 
-		var slide = $(this).attr("data-slide");
+		var $this = $(this);
+		var slide = $this.attr("data-slide");
 
 		$(".slider").not(slide).slideUp(200);
 		$(slide).slideToggle(200);
+		$companies.removeClass("active");
+		$this.toggleClass("active");
 	});
 
 }
@@ -181,7 +151,7 @@ function loadMenu() {
 }
 
 function loadModals() {
-	$("[data-modal]").click(function(event) {
+	$("[data-modal]").click(function (event) {
 		event.preventDefault();
 
 		var $this = $(this);
@@ -189,7 +159,7 @@ function loadModals() {
 		$($this.attr("data-modal")).fadeIn(200);
 	});
 
-	$(".modal > span").click(function() {
+	$(".modal > span").click(function () {
 		$(this).parent().fadeOut(200);
 	})
 }

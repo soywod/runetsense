@@ -5,38 +5,33 @@
 #company {
   background: url(../img/company.jpg) no-repeat top left;
   background-size: cover;
-
-  .training {
-    background: #c7d54a;
-  }
-
-  .team-building {
-    background: $green;
-  }
-
-  .conference {
-    background: #f5a46c;
-  }
-
-  .custom {
-    background: #7b797a;
-  }
 }
 
 .company.module {
   cursor: pointer;
+  background: $brown;
+  transition: background 200ms;
 
   h3 {
     margin: 0;
+    color: $white;
 
     & + div {
       font-style: italic;
+      color: $white;
     }
+  }
+
+  &:hover {
+    background: darken($brown, 5%);
+  }
+
+  &.active {
+    background: darken($brown, 10%);
   }
 }
 
 .company-icon {
   margin-bottom: 12px;
   border-radius: 50%;
-  //background: $white;
 }

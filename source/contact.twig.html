@@ -5,30 +5,7 @@ menu: contact
 
 <section class="contact">
 	<div class="container">
-		<div class="module">
-			<div class="center responsive large mobile flex">
-				<img src="{{ site.url }}/{{ theme_path('assets/img/nicolas-bourada.jpg') }}"
-				     alt="Photo de Mr Nicolas BOURADA"
-				     class="flex-item-auto">
-
-				<ul>
-					<li>
-						<i class="fa fa-fw fa-user"></i>
-						Mr Nicolas BOURADA
-					</li>
-					<li>
-						<i class="fa fa-fw fa-phone"></i>
-						<a href="#" id="show-phone">Afficher le téléphone</a>
-					</li>
-					<li>
-						<i class="fa fa-fw fa-envelope-o"></i>
-						<a href="#" id="show-email">Afficher l'email</a>
-					</li>
-				</ul>
-			</div>
-
-			<br>
-
+		<div class="flex module">
 			<form action="/php/mail.php" method="post">
 				<label for="name">Nom complet (*)</label>
 				<input id="name" type="text" name="name" required>

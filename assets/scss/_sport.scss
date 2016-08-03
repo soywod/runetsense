@@ -8,73 +8,40 @@
 }
 
 .sport.module {
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  cursor: pointer;
+  background: $green;
+  transition: background 200ms;
 
   h3 {
-    margin: 0;
-
-    & + div {
-      font-style: italic;
-    }
+    color: $white;
   }
 
-  &.diagnostic {
-    background: #c7d54a;
+  &:hover {
+    background: darken($green, 5%);
   }
 
-  &.coaching {
-    background: #7b797a;
-  }
-
-  &.conference {
-    background: #f5a46c;
-  }
-
-  &.football {
-    background: $green;
+  &.active {
+    background: darken($green, 7%);
   }
 }
 
 .sport-icon {
-  color: $black;
-  opacity: .12;
   margin-bottom: 12px;
+  border-radius: 50%;
 }
 
 .sport-playlist {
-  width: 125px;
-
-  ul {
-    margin: 0 0 0 30px;
-  }
+  margin-top: 30px;
+  overflow: auto;
+  width: 100%;
 }
 
 .sport-playlist-item {
-  width: 100%;
+  height: 100px;
 }
 
 .sport-playlist-link {
   color: $black;
   display: block;
-  padding: 7px 0;
-}
-
-@media only screen and (max-width: 479px) {
-  .sport-playlist ul {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .sport-playlist {
-    display: block;
-  }
-
-  .sport.module {
-    height: 75px;
-  }
+  padding: 0 7px;
 }

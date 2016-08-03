@@ -21,115 +21,95 @@ menu: sport
 		</header>
 
 		<div class="responsive tablet flex">
-			<div class="responsive large mobile flex">
-				<div class="column flex">
-					<div class="center flex conference sport inverted module"></div>
-					<div class="center flex coaching sport inverted module"></div>
-				</div>
-				<div class="column flex">
-					<div class="center flex diagnostic sport inverted module"></div>
-					<div class="center flex football sport inverted module"></div>
+			<div class="center flex sport module" data-slide="#diagnostic">
+				<div class="text-center ">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-team-building.png') }}"
+					     width="100"
+					     height="100"
+					     class="sport-icon"
+					     alt="Icône de diagnostic">
+					<h3>diagnostic</h3>
 				</div>
 			</div>
-			<div>
-				<div class="center responsive medium mobile flex module">
-					<div>
-						<video class="sport-player" poster="" src="" width="100%" controls></video>
-					</div>
-					<div class="sport-playlist flex-item-auto">
-						<ul class="column center flex">
-							<li>
-								<a href="#" class="sport-playlist-link">
-									<img class="sport-playlist-item"
-									     src="{{ site.url }}/{{ theme_path('assets/img/about.jpg') }}"
-									     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
-									Intro de malade de ouf lol yeah yayay
-								</a>
-							</li>
-							<li>
-								<a href="#" class="sport-playlist-link">
-									<img class="sport-playlist-item"
-									     src="{{ site.url }}/{{ theme_path('assets/img/company.jpg') }}"
-									     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
-									Video 1
-								</a>
-							</li>
-							<li>
-								<a href="#" class="sport-playlist-link">
-									<img class="sport-playlist-item"
-									     src="{{ site.url }}/{{ theme_path('assets/img/sport.jpg') }}"
-									     data-video="{{ site.url }}/{{ theme_path('assets/video/intro.mp4') }}">
-									Video 2
-								</a>
-							</li>
-						</ul>
-					</div>
+			<div class="center flex sport module" data-slide="#team-building">
+				<div class="text-center">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement.png') }}"
+					     width="100"
+					     height="100"
+					     class="sport-icon"
+					     alt="Icône d'accompagnement">
+					<h3>accompagnement</h3>
 				</div>
+			</div>
+			<div class="center flex sport module" data-slide="#conference">
+				<div class="text-center">
+					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-conference.png') }}"
+					     width="100"
+					     height="100"
+					     class="sport-icon"
+					     alt="Icône de conférence">
+					<h3>conférences</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex column module">
+			<div>
+				<video class="sport-player" poster="" src="" width="100%" controls></video>
+				<div class="text-center"></div>
+			</div>
+			<div class="sport-playlist">
+				<ul class="flex">
+					<li class="flex-item-auto">
+						<a href="#" class="sport-playlist-link">
+							<img class="sport-playlist-item"
+							     src="{{ site.url }}/{{ theme_path('assets/img/video-1.jpg') }}"
+							     data-video="{{ site.url }}/{{ theme_path('assets/video/') }}"
+							     data-label="Les pouvoirs extraordinaires du corps humain – France 2">
+						</a>
+					</li>
+					<li class="flex-item-auto">
+						<a href="#" class="sport-playlist-link">
+							<img class="sport-playlist-item"
+							     src="{{ site.url }}/{{ theme_path('assets/img/video-2.jpg') }}"
+							     data-video="{{ site.url }}/{{ theme_path('assets/video/') }}"
+							     data-label="Séance coaching Yeni NGBAKOTO – Bein Sports">
+						</a>
+					</li>
+					<li class="flex-item-auto">
+						<a href="#" class="sport-playlist-link">
+							<img class="sport-playlist-item"
+							     src="{{ site.url }}/{{ theme_path('assets/img/video-3.jpg') }}"
+							     data-video="{{ site.url }}/{{ theme_path('assets/video/') }}"
+							     data-label="Reportage Canal + sur les préférences motrices">
+						</a>
+					</li>
+					<li class="flex-item-auto">
+						<a href="#" class="sport-playlist-link">
+							<img class="sport-playlist-item"
+							     src="{{ site.url }}/{{ theme_path('assets/img/video-4.jpg') }}"
+							     data-video="{{ site.url }}/{{ theme_path('assets/video/') }}"
+							     data-label="Les préférences motrices : le cas Mezut Özil – Canal +">
+						</a>
+					</li>
+					<li class="flex-item-auto">
+						<a href="#" class="sport-playlist-link">
+							<img class="sport-playlist-item"
+							     src="{{ site.url }}/{{ theme_path('assets/img/video-5.jpg') }}"
+							     data-video="{{ site.url }}/{{ theme_path('assets/video/') }}"
+							     data-label="Comparatif des préférences Özil, Matuidi, Mavuba – Canal +">
+						</a>
+					</li>
+					<li class="flex-item-auto">
+						<a href="#" class="sport-playlist-link">
+							<img class="sport-playlist-item"
+							     src="{{ site.url }}/{{ theme_path('assets/img/video-6.jpg') }}"
+							     data-video="{{ site.url }}/{{ theme_path('assets/video/') }}"
+							     data-label="Introduction aux préférences motrices et testing plateau Canal +">
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </section>
-
-<!-- META -->
-<div class="meta-conference-origin">
-	<div class="text-center">
-		<i class="sport-icon fa fa-television fa-3x"></i>
-		<h3>conférences</h3>
-		<div>1h30 à 3h</div>
-	</div>
-</div>
-
-<div class="meta-conference">
-	<div>
-		<div>- Qu’est ce qu’Action Types®</div>
-		<div>- Identifier sa signature motrice</div>
-		<div>- Son impact en compétition</div>
-	</div>
-</div>
-
-<div class="meta-coaching-origin">
-	<div class="text-center">
-		<i class="sport-icon fa fa-line-chart fa-3x"></i>
-		<h3>coaching</h3>
-	</div>
-</div>
-
-<div class="meta-coaching">
-	<div>
-		<div>- Individuel (joueurs)</div>
-		<div>- Staff (coach, préparateur physique)</div>
-	</div>
-</div>
-
-<div class="meta-diagnostic-origin">
-	<div class="text-center">
-		<i class="sport-icon fa fa-heartbeat fa-3x"></i>
-		<h3>diagnostic</h3>
-		<div>2h</div>
-	</div>
-</div>
-
-<div class="meta-diagnostic">
-	<div>
-		<div>- Individuel (testing + rapport)</div>
-		<div>- Collectif (zones fortes et nœuds collectifs)</div>
-	</div>
-</div>
-
-<div class="meta-football-origin">
-	<div class="text-center">
-		<div class="text-center">
-			<i class="sport-icon fa fa-futbol-o fa-3x"></i>
-			<h3>spécifique foot</h3>
-		</div>
-	</div>
-</div>
-
-<div class="meta-football">
-	<div>
-		<div>- Améliorer sa frappe de balle</div>
-		<div>- Performance équipe</div>
-		<div>- Spécifique gardien de but</div>
-		<div>- Efficacité coups de pieds arrêtés</div>
-	</div>
-</div>

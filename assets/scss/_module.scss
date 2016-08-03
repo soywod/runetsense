@@ -33,8 +33,11 @@
     background: $lightGrey;
   }
 
-  &.orange {
-    color: $white;
-    background: $orange;
+  &.green {
+    background: $green;
+  }
+
+  &.round {
+    border-radius: 50%;
   }
 }
