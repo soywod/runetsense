@@ -7,8 +7,11 @@
   }
 
   &.center {
-    align-items: center;
     justify-content: center;
+
+    &:not(.top) {
+      align-items: center;
+    }
   }
 
   > *:not(.flex-item-auto) {

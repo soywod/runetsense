@@ -8,20 +8,26 @@
   bottom: 0;
   left: 0;
   flex-flow: column;
-  background: $lightGrey;
+  background: $white;
   overflow-y: auto;
+  padding-bottom: 150px;
 
+  /*
   &:not(#home) section {
     margin-top: 23px;
   }
+  */
 }
 
 .frame-footer {
-  font-size: .9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: .8rem;
   padding: 7px;
   background: $black;
   color: $white;
-  margin: 30px 7px 7px 7px;
 }
 
 .frame-footer-social {

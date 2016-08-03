@@ -7,7 +7,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: transparentize($white, .035);
+  background: transparentize($black, .4);
   z-index: 100;
 
   h1,
@@ -19,14 +19,24 @@
     @include header;
   }
 
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
   & > div {
     max-width: 768px;
   }
+}
+
+.modal-content {
+  padding: 30px;
+  background: $white;
+  position: relative;
 
   & > span {
     cursor: pointer;
-    position: fixed;
-    top: 30px;
+    position: absolute;
+    top: 20px;
     right: 30px;
   }
 }

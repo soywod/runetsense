@@ -4,8 +4,8 @@ menu: sport
 ---
 
 <section>
-	<div class="container">
-		<header class="module">
+	<header class="module">
+		<div class="container">
 			<h1>pour le sport</h1>
 
 			<p class="bold">
@@ -18,12 +18,16 @@ menu: sport
 				aide à la découvrir et vous accompagne afin de l’exploiter à son maximum afin d’être plus efficient
 				(efficacité à moindre coût énergétique).
 			</p>
-		</header>
+		</div>
+	</header>
 
+	<div class="container">
 		<div class="responsive tablet flex">
-			<div class="center flex sport module" data-slide="#diagnostic">
+			<div class="top center flex sport transparent module" data-slide="#diagnostic">
 				<div class="text-center ">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-team-building.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-team-building.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-team-building-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="sport-icon"
@@ -31,9 +35,11 @@ menu: sport
 					<h3>diagnostic</h3>
 				</div>
 			</div>
-			<div class="center flex sport module" data-slide="#team-building">
+			<div class="top center flex sport transparent module" data-slide="#team-building">
 				<div class="text-center">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="sport-icon"
@@ -41,9 +47,11 @@ menu: sport
 					<h3>accompagnement</h3>
 				</div>
 			</div>
-			<div class="center flex sport module" data-slide="#conference">
+			<div class="top center flex sport transparent module" data-slide="#conference">
 				<div class="text-center">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-conference.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-conference.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-conference-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="sport-icon"
@@ -52,13 +60,17 @@ menu: sport
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="flex column module">
-			<div>
+	<div class="flex column module">
+		<div>
+			<div class="container">
 				<video class="sport-player" poster="" src="" width="100%" controls></video>
 				<div class="text-center"></div>
 			</div>
-			<div class="sport-playlist">
+		</div>
+		<div class="sport-playlist">
+			<div class="container">
 				<ul class="flex">
 					<li class="flex-item-auto">
 						<a href="#" class="sport-playlist-link">

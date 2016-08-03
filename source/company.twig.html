@@ -4,8 +4,8 @@ menu: company
 ---
 
 <section>
-	<div class="container">
-		<header class="module">
+	<header class="module">
+		<div class="container">
 			<h1>Pour l'entreprise</h1>
 
 			<p class="bold">
@@ -32,56 +32,68 @@ menu: company
 				Cela permet de manière ludique et efficace d’exprimer nos talents et nos zones de développement
 				potentiels
 			</p>
-		</header>
+		</div>
+	</header>
 
+	<div class="container">
 		<div class="responsive tablet flex">
-			<div class="center flex company transparent module" data-slide="#training">
+			<div class="top center flex company transparent module" data-slide="#training">
 				<div class="text-center ">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-formation.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-formation.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-formation-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="company-icon training"
 					     alt="Icône de formation">
 					<h3>formations</h3>
-					<div class="text-white">1 à 3 jours</div>
+					<div>1 à 3 jours</div>
 				</div>
 			</div>
-			<div class="center flex company transparent module" data-slide="#team-building">
+			<div class="top center flex company transparent module" data-slide="#team-building">
 				<div class="text-center">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-team-building.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-team-building.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-team-building-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="company-icon team-building"
 					     alt="Icône de formation">
 					<h3>team building</h3>
-					<div class="text-white">1 à 2 jours</div>
+					<div>1 à 2 jours</div>
 				</div>
 			</div>
-			<div class="center flex company transparent module" data-slide="#conference">
+			<div class="top center flex company transparent module" data-slide="#conference">
 				<div class="text-center">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-conference.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-conference.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-conference-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="company-icon conference"
 					     alt="Icône de formation">
 					<h3>conférences</h3>
-					<div class="text-white">1h30 à 3h</div>
+					<div>1h30 à 3h</div>
 				</div>
 			</div>
-			<div class="center flex company transparent module" data-slide="#custom">
+			<div class="top center flex company transparent module" data-slide="#custom">
 				<div class="text-center">
 					<img src="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement.png') }}"
+					     data-src="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement.png') }}"
+					     data-src-active="{{ site.url }}/{{ theme_path('assets/img/picto-accompagnement-active.png') }}"
 					     width="100"
 					     height="100"
 					     class="company-icon custom"
 					     alt="Icône de formation">
-					<h3 class="text-white">accompagnement</h3>
-					<div class="text-white">selon demande</div>
+					<h3>accompagnement</h3>
+					<div>selon demande</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="slider" id="training" style="display: none;">
+	<div class="slider" id="training" style="display: none;">
+		<div class="container">
 			<div class="flex column center text-center module">
 				<h3 class="no-margin">
 					<a href="#" data-modal="#module-1">Connaissance de soi</a>
@@ -89,7 +101,7 @@ menu: company
 				<div><em>Socle commun à toutes les formations - 1 jour</em></div>
 			</div>
 			<div class="center black text-center flex">
-				<i class="fa text-white fa-plus fa-4x"></i>
+				<i class="fa text-grey fa-plus fa-4x"></i>
 			</div>
 			<div class="flex">
 				<div class="module">
@@ -150,7 +162,7 @@ menu: company
 					</ul>
 				</div>
 			</div>
-			<div class="flex transparent text-white module">
+			<div class="flex transparent module">
 				<div>
 					<strong>Pas de questionnaire de personnalité envoyé aux participants !</strong><br>
 					Chaque formation aborde les typologies de personnalité sous un angle innovant : Le testing dynamique
@@ -160,8 +172,10 @@ menu: company
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="slider" id="team-building" style="display: none;">
+	<div class="slider" id="team-building" style="display: none;">
+		<div class="container">
 			<div class="flex center module">
 				<div>
 					<h3>Durée : 1/2j à 2 jours</h3>
@@ -210,8 +224,10 @@ menu: company
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="slider" id="conference" style="display: none;">
+	<div class="slider" id="conference" style="display: none;">
+		<div class="container">
 			<div class="flex center module">
 				<div>
 					<h3>Durée : 1h à 3h</h3>
@@ -255,8 +271,10 @@ menu: company
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="slider" id="custom" style="display: none;">
+	<div class="slider" id="custom" style="display: none;">
+		<div class="container">
 			<div class="column center text-center flex module">
 				<div style="font-size: 1.2rem">
 					<em>
@@ -316,7 +334,7 @@ menu: company
 </section>
 
 <div id="module-1" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 jour</h2>
 
@@ -350,13 +368,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-2" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 jour</h2>
 
@@ -398,13 +416,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-3" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 jour</h2>
 
@@ -446,13 +464,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-4" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 jour</h2>
 
@@ -490,13 +508,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-5" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 jour</h2>
 
@@ -538,13 +556,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-6" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 jour</h2>
 
@@ -590,13 +608,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-7" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 à 2 jours</h2>
 
@@ -646,13 +664,13 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>
 
 <div id="module-8" class="modal center flex" style="display: none;">
-	<div>
+	<div class="modal-content">
 		<div class="container">
 			<h2>Durée : 1 à 2 jours</h2>
 
@@ -690,7 +708,7 @@ menu: company
 			<div>Outils pédagogiques MBTI®</div>
 			<div>Livrables officiels via OPP® pour chacun des participants</div>
 		</div>
-	</div>
 
-	<span><i class="fa fa-times fa-4x"></i></span>
+		<span><i class="fa fa-times fa-3x"></i></span>
+	</div>
 </div>

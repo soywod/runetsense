@@ -3,31 +3,30 @@
 @import "mixins";
 
 #sport {
-  background: url(../img/sport.jpg) no-repeat right center;
-  background-size: cover;
+  //background: url(../img/sport.jpg) no-repeat right center;
+  //background-size: cover;
 }
 
 .sport.module {
   cursor: pointer;
-  background: $green;
-  transition: background 200ms;
 
   h3 {
-    color: $white;
+    margin: 0;
+    color: $black;
   }
 
-  &:hover {
-    background: darken($green, 5%);
-  }
-
-  &.active {
-    background: darken($green, 7%);
+  &:hover .sport-icon,
+  &.active .sport-icon {
+    background: $green;
   }
 }
 
 .sport-icon {
   margin-bottom: 12px;
   border-radius: 50%;
+  background: $white;
+  border: 2px solid $green;
+  transition: background 200ms;
 }
 
 .sport-playlist {

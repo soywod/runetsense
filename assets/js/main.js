@@ -127,18 +127,52 @@ function company() {
 
 	var $companies = $(".company");
 
-	$companies.click(function (event) {
-		event.preventDefault();
+	$companies
+		.on("click", function (event) {
+			event.preventDefault();
 
+			var $this = $(this);
+			var slide = $this.attr("data-slide");
+			var $icon = $this.find(".company-icon");
+
+			$(".slider").not(slide).slideUp(200);
+			$(slide).slideToggle(200);
+			$companies.removeClass("active");
+			$this.toggleClass("active");
+			$(".company-icon").not($icon).each(function(index, item) {
+				var $item = $(item);
+
+				$item.attr("src", $item.attr("data-src"));
+			});
+		})
+		.on("mouseenter", function () {
+			var $this = $(this);
+
+			if (! $this.hasClass("active")) {
+				var $picto = $this.find(".company-icon");
+				$picto.attr("src", $picto.attr("data-src-active"));
+			}
+		})
+		.on("mouseleave", function () {
+			var $this = $(this);
+
+			if (! $this.hasClass("active")) {
+				var $picto = $this.find(".company-icon");
+				$picto.attr("src", $picto.attr("data-src"));
+			}
+		});
+
+	function swapSrc() {
 		var $this = $(this);
-		var slide = $this.attr("data-slide");
 
-		$(".slider").not(slide).slideUp(200);
-		$(slide).slideToggle(200);
-		$companies.removeClass("active");
-		$this.toggleClass("active");
-	});
+		if (! $this.hasClass("active")) {
+			var $picto = $this.find(".company-icon");
+			var old    = $picto.attr("src");
 
+			$picto.attr("src", $picto.attr("data-src-active"));
+			$picto.attr("data-src-active", old);
+		}
+	}
 }
 
 function loadMenu() {
@@ -159,7 +193,7 @@ function loadModals() {
 		$($this.attr("data-modal")).fadeIn(200);
 	});
 
-	$(".modal > span").click(function () {
-		$(this).parent().fadeOut(200);
+	$(".modal-content > span").click(function () {
+		$(this).parent().parent().fadeOut(200);
 	})
 }
