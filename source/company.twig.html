@@ -82,11 +82,11 @@ menu: company
 		</div>
 
 		<div class="slider" id="training" style="display: none;">
-			<div class="flex column center text-center module">
-				<h3 class="text-black no-margin">
+			<div class="flex column center text-center inverted module">
+				<h3 class="no-margin">
 					<a href="#" data-modal="#module-1">Connaissance de soi</a>
 				</h3>
-				<div><em>- 1 jour -</em></div>
+				<div><em>Socle commun à toutes les formations - 1 jour</em></div>
 			</div>
 			<div class="center black text-center flex">
 				<i class="fa text-white fa-plus fa-4x"></i>
@@ -96,13 +96,13 @@ menu: company
 					<h3 class="text-black">performance individuelle</h3>
 					<ul>
 						<li>
-							<a href="#" data-modal="#">
+							<a href="#" data-modal="#module-2">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Connaissance de soi optimisée
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" data-modal="#module-3">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Prévenir et gérer son stress
 							</a>
@@ -113,19 +113,19 @@ menu: company
 					<h3 class="text-black">performance collective</h3>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="#" data-modal="#module-4">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Adaptez votre communication
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" data-modal="#module-5">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Développer la cohésion d’équipe
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" data-modal="#module-6">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Gestion des conflits et des émotions
 							</a>
@@ -136,18 +136,27 @@ menu: company
 					<h3 class="text-black">performance managériale</h3>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="#" data-modal="#module-7">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Améliorez votre leadership
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#" data-modal="#module-8">
 								<i class="fa fa-fw fa-angle-right"></i>
 								Motivez vos collaborateurs
 							</a>
 						</li>
 					</ul>
+				</div>
+			</div>
+			<div class="flex transparent text-white module">
+				<div>
+					<strong>Pas de questionnaire de personnalité envoyé aux participants !</strong><br>
+					Chaque formation aborde les typologies de personnalité sous un angle innovant : Le testing dynamique
+					comme révélateur de type de personnalité. Nous ne privilégions pas la transmission d’une « boite à
+					outils » comme solution unique mais un respect de la logique de l’individu, de son contexte et de
+					son environnement.
 				</div>
 			</div>
 		</div>
@@ -194,9 +203,10 @@ menu: company
 					</p>
 				</div>
 
-				<div class="flex-item-auto">
+				<div>
 					<img src="{{ site.url }}/{{ theme_path('assets/img/team-building.jpg') }}"
-					     alt="" width="400">
+					     alt="Mr Nicolas BOURADA en entreprise"
+					     width="100%">
 				</div>
 			</div>
 		</div>
@@ -238,15 +248,69 @@ menu: company
 					</ul>
 				</div>
 
-				<div class="flex-item-auto">
+				<div>
 					<img src="{{ site.url }}/{{ theme_path('assets/img/conference.jpg') }}"
-					     alt="" width="400">
+					     alt="Mr Nicolas BOURADA sur un plateau TV"
+					     width="100%">
 				</div>
 			</div>
 		</div>
 
-		<div class="module slider flex" id="custom" style="display:none;">
-			custom
+		<div class="slider" id="custom" style="display: none;">
+			<div class="column center text-center flex inverted module">
+				<div style="font-size: 1.2rem">
+					<em>
+						<i class="fa fa-fw fa-quote-left"></i>
+						Le monde déteste le changement c'est pourtant la seule chose qui lui a permis de progresser
+						<i class="fa fa-fw fa-quote-right"></i>
+					</em>
+				</div>
+				<div>Charles F. Kettering</div>
+			</div>
+			<div class="flex">
+				<div class="module">
+					<h3>Individuel</h3>
+
+					<p>L’accompagnement individuel se construit ensemble, sur mesure selon votre demande.</p>
+
+					<ul>
+						<li><em>Exemples de thèmes :</em></li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Conduite du changement
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Prise en compte de ses besoins et des besoins d’autrui
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Améliorer sa communication
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							Se révélez en tant que leader
+						</li>
+						<li>
+							<i class="fa fa-fw fa-angle-right"></i>
+							...
+						</li>
+					</ul>
+				</div>
+
+				<div class="module">
+					<h3>Collectif</h3>
+
+					<p>
+						L’accompagnement collectif est proposé suite aux formations et animations déjà réalisées dans
+						une équipe.
+					</p>
+
+					<p>
+						Il s’agit d’un suivi 1 à 2 fois par an afin de s’assurer que l’objectif initial a été atteint
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -279,6 +343,346 @@ menu: company
 				<li>
 					<i class="fa fa-fw fa-angle-right"></i>
 					Prise de conscience des différentes interactions via les 16 typologies de personnalité du MBTI®.
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-2" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 jour</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Prendre conscience de son impact sur les autres.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Favoriser une meilleure connaissance mutuelle dans un contexte plus détendu.
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Revenir sur les types de personnalités selon le MBTI®
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Comprendre le type de personnalité́ de son interlocuteur (points communs et différences)
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Savoir lâcher prise et s’adapter
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Développer son efficacité relationnelle
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-3" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 jour</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Ne pas se laisser submerger par le stress ou les émotions.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Percevoir les situations de stress selon leur niveau d’intensité respectif.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Gagner en sérénité, retrouver un équilibre personnel.
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Identifier les facteurs de stress et leur niveau d’intensité.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Mon attitude face au stress
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Quelles ressources dans la gestion du stress
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-4" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 jour</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Découvrir ses attitudes de communication et leurs conséquences dans la relation.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Faire évoluer une situation d’incompréhension dans une perspective d’entente relationnelle.
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Revenir sur les types de personnalités selon le MBTI®
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Savoir identifier les différents types de communication verbales et non verbales
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Adapter sa communication en fonction de son interlocuteur.
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-5" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 jour</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Trouver une cohésion d’équipe après un rapprochement de différents groupes ou entités.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Mieux travailler ensemble, contribuer au succès de l’équipe.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Accroitre la dynamique et la communication au sein de l’équipe et définir de nouveaux challenges.
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Découvrir les différents types de personnalités
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Identifier le profil d’équipe (zones d’harmonie et de conflits potentiels)
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Détecter et respecter les besoins intrinsèque de chacun
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-6" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 jour</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Prévenir le conflit en conservant des relations interpersonnelles saines
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Faire face à ses émotions et celle des autres
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Ne pas laisser l’incompréhension virer au conflit
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Sortir des conflits de façon constructive
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Prévenir le conflit (Avant)
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Ne pas fuir le conflit mais l’affronter pour le résoudre (Pendant)
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Le conflit constructif (Après)
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-7" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 à 2 jours</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Mieux se connaître pour mieux manager efficacement
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Maitriser le MBTI® dans le cadre du management et du coaching
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Faire grandir les individus (performance individuelle)
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Faire grandir l’équipe (performance collective)
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Mon style de management
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Etude de cas des problématiques rencontrées dans le management
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Les interactions manager – collaborateur (recherche de performance individuelle et collective)
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Les évolutions possibles – dynamique du flow
+				</li>
+			</ul>
+
+			<div>Programme + détaillé sur demande</div>
+			<div>Outils pédagogiques MBTI®</div>
+			<div>Livrables officiels via OPP® pour chacun des participants</div>
+		</div>
+	</div>
+
+	<span><i class="fa fa-times fa-4x"></i></span>
+</div>
+
+<div id="module-8" class="modal center flex" style="display: none;">
+	<div>
+		<div class="container">
+			<h2>Durée : 1 à 2 jours</h2>
+
+			<h2>Objectif</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Savoir motiver chaque collaborateur selon ses préférences intrinsèques
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Conserver le tonus et la motivation nécessaires pour atteindre les objectifs fixés
+				</li>
+			</ul>
+
+			<h2>Programme</h2>
+
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Identifier les motivations profondes®, ce qui apporte le tonus nécessaire pour toute mise en action.
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Apprendre à nourrir ses motivations et celles des autres dans un contexte de management
+				</li>
+				<li>
+					<i class="fa fa-fw fa-angle-right"></i>
+					Comprendre les différentes familles de tempéraments
 				</li>
 			</ul>
 
