@@ -1,6 +1,6 @@
 <?php
 
-$to = 'nbourada@runetsense.fr';
+$to = 'contact@runetsense.fr';
 $subject = 'Prise de contact sur runetsense.fr (' . $_POST['name'] . ')';
 $message = 'Un utilisateur vous a envoyé un message depuis runetsense.fr (' . $_POST['name'] . ' - ' . $_POST['tel'] . ')' . "\r\n";
 $message .= $_POST['message'];
