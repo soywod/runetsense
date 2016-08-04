@@ -50,7 +50,7 @@ function sport() {
 	var $playlist      = $(".sport-playlist-item");
 	var $playlistLinks = $(".sport-playlist-link");
 
-	offsetSlider   = $("#slider").offset().top;
+	offsetSlider = $("#slider").offset().top;
 
 	changeVideo($($playlist[0]));
 
@@ -76,7 +76,7 @@ function sport() {
 			var $slide = $($this.attr("data-slide"));
 			var $icon  = $this.find(".sport-icon");
 
-			$(".slider").not($slide).slideUp(200, function() {
+			$(".slider").not($slide).slideUp(200, function () {
 				if (! $slide.is(":visible")) {
 					$('.frame').animate({
 						scrollTop: offsetSlider
@@ -165,7 +165,7 @@ function company() {
 			var $slide = $($this.attr("data-slide"));
 			var $icon  = $this.find(".company-icon");
 
-			$(".slider").not($slide).slideUp(200, function() {
+			$(".slider").not($slide).slideUp(200, function () {
 				if (! $slide.is(":visible")) {
 					$('.frame').animate({
 						scrollTop: offsetSlider
@@ -220,6 +220,39 @@ function loadMenu() {
 		event.preventDefault();
 		$menuLinks.classList.toggle("visible");
 	});
+}
+
+function home() {
+	$("#play").click(function () {
+		document.getElementById("video").play();
+		$(this).parent().remove();
+	});
+}
+
+function contact() {
+	var sent = getUrlParameter("sent");
+
+	if (sent === "1") {
+		alert("Votre message a bien été envoyé !")
+	}
+	else if (sent === "0" || sent.trim() === "") {
+		alert("Une erreur est survenue lors de l'envoi du message");
+	}
+
+	function getUrlParameter(sParam) {
+		var sPageURL      = decodeURIComponent(window.location.search.substring(1)),
+		    sURLVariables = sPageURL.split('&'),
+		    sParameterName,
+		    i;
+
+		for (i = 0; i < sURLVariables.length; i ++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	}
 }
 
 function loadModals() {

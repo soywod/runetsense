@@ -5,7 +5,11 @@ title: Run&Sense - Vidéo d'introduction aux préférences motrices et à Run&Se
 ---
 
 <section class="video">
-	<video autobuffer autoplay loop>
+	<video id="video" autobuffer autoplay loop>
 		<source src="{{ site.url }}/{{ theme_path('assets/video/intro.webm') }}" type="video/webm">
 	</video>
 </section>
+
+<div class="video-play flex center">
+	<button id="play" class="flex-item-auto"><i class="fa fa-fw fa-play-circle-o fa-5x"></i></button>
+</div>
