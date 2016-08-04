@@ -17,6 +17,18 @@
   > *:not(.flex-item-auto) {
     flex: 1;
   }
+
+  > .flex-double {
+    flex: 2;
+  }
+
+  > .flex-triple {
+    flex: 3;
+  }
+
+  > .flex-quad {
+    flex: 4;
+  }
 }
 
 /* ==================== MEDIA QUERIES ==================== */

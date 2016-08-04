@@ -10,7 +10,10 @@
   flex-flow: column;
   background: $white;
   overflow-y: auto;
-  padding-bottom: 37px;
+
+  &:not(#home) {
+    padding-bottom: 37px;
+  }
 }
 
 .frame-footer {

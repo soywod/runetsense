@@ -13,11 +13,6 @@
   h3 {
     margin: 0;
     color: $black;
-
-    & + div {
-      font-style: italic;
-      color: $black;
-    }
   }
 
   &:hover .company-icon,
