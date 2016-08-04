@@ -70,8 +70,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    border-bottom: 1px solid transparentize($brown, .8);
-    box-shadow: 0 2px 7px 0 transparentize($brown, .85);
+    border-bottom: 1px solid $lightGrey;
     flex-direction: column;
 
     &.visible {

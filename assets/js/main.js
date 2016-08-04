@@ -34,6 +34,8 @@
  $('.ui.dropdown').dropdown();
  });*/
 
+var offsetSlider;
+
 function DOMLoaded(page) {
 	loadMenu();
 
@@ -42,28 +44,13 @@ function DOMLoaded(page) {
 	}
 }
 
-function home() {
-	/*
-	 var $videoLeftArrow  = document.getElementsByClassName("video-company")[0];
-	 var $videoRightArrow = document.getElementsByClassName("video-sport")[0];
-
-	 $videoLeftArrow.addEventListener("mouseenter", toggleActiveClass);
-	 $videoLeftArrow.addEventListener("mouseleave", toggleActiveClass);
-	 $videoRightArrow.addEventListener("mouseenter", toggleActiveClass);
-	 $videoRightArrow.addEventListener("mouseleave", toggleActiveClass);
-
-	 function toggleActiveClass() {
-	 $videoLeftArrow.classList.toggle("visible");
-	 $videoRightArrow.classList.toggle("visible");
-	 }
-	 */
-}
-
 function sport() {
 	var $video         = $(".sport-player");
 	var $sports        = $(".sport");
 	var $playlist      = $(".sport-playlist-item");
 	var $playlistLinks = $(".sport-playlist-link");
+
+	offsetSlider   = $("#slider").offset().top;
 
 	changeVideo($($playlist[0]));
 
@@ -85,14 +72,22 @@ function sport() {
 		.on("click", function (event) {
 			event.preventDefault();
 
-			var $this = $(this);
-			var slide = $this.attr("data-slide");
-			var $icon = $this.find(".sport-icon");
+			var $this  = $(this);
+			var $slide = $($this.attr("data-slide"));
+			var $icon  = $this.find(".sport-icon");
 
-			$(".slider").not(slide).slideUp(200);
-			$(slide).slideToggle(200);
+			$(".slider").not($slide).slideUp(200, function() {
+				if (! $slide.is(":visible")) {
+					$('.frame').animate({
+						scrollTop: offsetSlider
+					}, "slow");
+				}
+			});
+
+			$slide.slideToggle(200);
 			$sports.removeClass("active");
 			$this.toggleClass("active");
+
 			$(".sport-icon").not($icon).each(function (index, item) {
 				var $item = $(item);
 
@@ -115,6 +110,14 @@ function sport() {
 				$picto.attr("src", $picto.attr("data-src"));
 			}
 		});
+
+	$(".scroll-playlist").click(function (event) {
+		event.preventDefault();
+
+		$('.frame').animate({
+			scrollTop: $(".frame section").height()
+		}, "slow");
+	});
 
 	function swapSrc() {
 		var $this = $(this);
@@ -152,18 +155,28 @@ function company() {
 
 	var $companies = $(".company");
 
+	offsetSlider = $("#slider").offset().top;
+
 	$companies
 		.on("click", function (event) {
 			event.preventDefault();
 
-			var $this = $(this);
-			var slide = $this.attr("data-slide");
-			var $icon = $this.find(".company-icon");
+			var $this  = $(this);
+			var $slide = $($this.attr("data-slide"));
+			var $icon  = $this.find(".company-icon");
 
-			$(".slider").not(slide).slideUp(200);
-			$(slide).slideToggle(200);
+			$(".slider").not($slide).slideUp(200, function() {
+				if (! $slide.is(":visible")) {
+					$('.frame').animate({
+						scrollTop: offsetSlider
+					}, "slow");
+				}
+			});
+
+			$slide.slideToggle(200);
 			$companies.removeClass("active");
 			$this.toggleClass("active");
+
 			$(".company-icon").not($icon).each(function (index, item) {
 				var $item = $(item);
 

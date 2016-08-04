@@ -46,11 +46,15 @@
 /* ==================== MEDIA QUERIES ==================== */
 
 @media (max-width: 767px) {
-  .about-content {
-    flex-direction: column;
+  .about-card {
+    text-align: center;
+  }
 
-    > div:not(:first-of-type) {
-      margin-top: 15px;
-    }
+  .about-photo {
+    margin: 0;
+  }
+
+  .about-br {
+    display: none;
   }
 }

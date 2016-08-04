@@ -4,8 +4,22 @@
   h2 {
     margin: 0;
   }
+
+  h4 {
+    text-align: left;
+  }
 }
 
 .approach-img {
   padding: 7px;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media (max-width: 767px) {
+  #approach {
+    h4 {
+      text-align: center;
+    }
+  }
 }
