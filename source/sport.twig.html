@@ -13,7 +13,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 
 			<p>
 				Action Types® est une approche fondée par Ralph HIPPOLYTE et Bertrand THERAULAZ.
-				Elle analyse votre manière préférentielle de vous mouvoir. <br>Votre signature motrice est innée, je vous
+				Elle analyse votre manière préférentielle de vous mouvoir. <br>Votre signature motrice est innée, je
+				vous
 				aide à la découvrir et vous accompagne afin de l’exploiter à son maximum afin d’être plus efficient
 				(efficacité à moindre coût énergétique).
 			</p>
@@ -126,6 +127,7 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 					       width="100%"
 					       controls>
 						<source src="{{ site.url }}/{{ theme_path('assets/video/video-2.webm') }}" type="video/webm">
+						<source src="{{ site.url }}/{{ theme_path('assets/video/video-2.mp4') }}" type="video/mp4">
 					</video>
 				</div>
 			</div>
@@ -308,7 +310,11 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 		</h2>
 		<div>
 			<div class="container">
-				<video class="sport-player" poster="" src="" width="100%" controls></video>
+				<div class="sport-player-container">
+					<video class="sport-player" poster="" width="100%" controls>
+					</video>
+				</div>
+
 				<div class="text-center"></div>
 			</div>
 		</div>
@@ -319,7 +325,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 						<a href="#" class="sport-playlist-link">
 							<img class="sport-playlist-item"
 							     src="{{ site.url }}/{{ theme_path('assets/img/video-1.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/video-1.webm') }}"
+							     data-video-webm="{{ site.url }}/{{ theme_path('assets/video/video-1.webm') }}"
+							     data-video-mp4="{{ site.url }}/{{ theme_path('assets/video/video-1.mp4') }}"
 							     data-label="Les pouvoirs extraordinaires du corps humain – France 2">
 						</a>
 					</li>
@@ -327,7 +334,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 						<a href="#" class="sport-playlist-link">
 							<img class="sport-playlist-item"
 							     src="{{ site.url }}/{{ theme_path('assets/img/video-2.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/video-2.webm') }}"
+							     data-video-webm="{{ site.url }}/{{ theme_path('assets/video/video-2.webm') }}"
+							     data-video-mp4="{{ site.url }}/{{ theme_path('assets/video/video-2.mp4') }}"
 							     data-label="Séance coaching Yeni NGBAKOTO – Bein Sports">
 						</a>
 					</li>
@@ -335,7 +343,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 						<a href="#" class="sport-playlist-link">
 							<img class="sport-playlist-item"
 							     src="{{ site.url }}/{{ theme_path('assets/img/video-3.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/video-3.webm') }}"
+							     data-video-webm="{{ site.url }}/{{ theme_path('assets/video/video-3.webm') }}"
+							     data-video-mp4="{{ site.url }}/{{ theme_path('assets/video/video-3.mp4') }}"
 							     data-label="Reportage Canal + sur les préférences motrices">
 						</a>
 					</li>
@@ -343,7 +352,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 						<a href="#" class="sport-playlist-link">
 							<img class="sport-playlist-item"
 							     src="{{ site.url }}/{{ theme_path('assets/img/video-4.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/video-4.webm') }}"
+							     data-video-webm="{{ site.url }}/{{ theme_path('assets/video/video-4.webm') }}"
+							     data-video-mp4="{{ site.url }}/{{ theme_path('assets/video/video-4.mp4') }}"
 							     data-label="Les préférences motrices : le cas Mezut Özil – Canal +">
 						</a>
 					</li>
@@ -351,7 +361,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 						<a href="#" class="sport-playlist-link">
 							<img class="sport-playlist-item"
 							     src="{{ site.url }}/{{ theme_path('assets/img/video-5.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/video-5.webm') }}"
+							     data-video-webm="{{ site.url }}/{{ theme_path('assets/video/video-5.webm') }}"
+							     data-video-mp4="{{ site.url }}/{{ theme_path('assets/video/video-5.mp4') }}"
 							     data-label="Comparatif des préférences Özil, Matuidi, Mavuba – Canal +">
 						</a>
 					</li>
@@ -359,7 +370,8 @@ title: Run&Sense - Préférences motrices appliquées au sport (en particulier a
 						<a href="#" class="sport-playlist-link">
 							<img class="sport-playlist-item"
 							     src="{{ site.url }}/{{ theme_path('assets/img/video-6.jpg') }}"
-							     data-video="{{ site.url }}/{{ theme_path('assets/video/video-6.webm') }}"
+							     data-video-webm="{{ site.url }}/{{ theme_path('assets/video/video-6.webm') }}"
+							     data-video-mp4="{{ site.url }}/{{ theme_path('assets/video/video-6.mp4') }}"
 							     data-label="Introduction aux préférences motrices et testing plateau Canal +">
 						</a>
 					</li>

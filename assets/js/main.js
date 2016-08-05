@@ -45,10 +45,10 @@ function DOMLoaded(page) {
 }
 
 function sport() {
-	var $video         = $(".sport-player");
-	var $sports        = $(".sport");
-	var $playlist      = $(".sport-playlist-item");
-	var $playlistLinks = $(".sport-playlist-link");
+	var $videoContainer = $(".sport-player-container");
+	var $sports         = $(".sport");
+	var $playlist       = $(".sport-playlist-item");
+	var $playlistLinks  = $(".sport-playlist-link");
 
 	offsetSlider = $("#slider").offset().top;
 
@@ -61,10 +61,15 @@ function sport() {
 	});
 
 	function changeVideo($elem) {
-		$video
-			.attr("poster", $elem.attr("src"))
-			.attr("src", $elem.attr("data-video"))
-			.find("+div")
+		var webm   = $elem.attr("data-video-webm");
+		var mp4    = $elem.attr("data-video-mp4");
+		var poster = $elem.attr("src");
+		var $video = $('<video poster="' + poster + '" width="100%" autobuffer controls></video>');
+
+		$video.html('<source src="' + webm + '" type="video/webm"><source src="' + mp4 + '" type="video/mp4">');
+
+		$videoContainer.html($video);
+		$videoContainer.find("+div")
 			.html($elem.attr("data-label"));
 	}
 
