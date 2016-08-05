@@ -35,6 +35,15 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
         <changefreq>weekly</changefreq>
         <video:video>
             <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-1.webm
+            </video:content_loc>
+            <video:title>Les pouvoirs extraordinaires du corps humain – France 2</video:title>
+            <video:description>
+                Les pouvoirs extraordinaires du corps humain par Nicolas BOURADA - Run&amp;Sense
+            </video:description>
+        </video:video>
+        <video:video>
+            <video:content_loc>
                 http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-2.webm
             </video:content_loc>
             <video:title>Séance coaching Yeni NGBAKOTO – Bein Sports</video:title>
