@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.smallseotools.com -->
+    <url>
+        <loc>http://www.runetsense.fr/home</loc>
+        <changefreq>weekly</changefreq>
+        <video:video>
+            <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/intro.webm
+            </video:content_loc>
+            <video:player_loc allow_embed="yes" autoplay="ap=1">
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/intro.webm
+            </video:player_loc>
+            <video:title>Run&amp;Sense introduction</video:title>
+            <video:description>
+                Vidéo d'introduction sur les préférences motrices et cognitives appliquées par Run&amp;Sense
+            </video:description>
+        </video:video>
+    </url>
+    <url>
+        <loc>http://www.runetsense.fr/about</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.runetsense.fr/company</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.runetsense.fr/sport</loc>
+        <changefreq>weekly</changefreq>
+        <video:video>
+            <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-2.webm
+            </video:content_loc>
+            <video:title>Séance coaching Yeni NGBAKOTO – Bein Sports</video:title>
+            <video:description>
+                Séance coaching Yeni NGBAKOTO par Nicolas BOURADA - Run&amp;Sense
+            </video:description>
+        </video:video>
+        <video:video>
+            <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-3.webm
+            </video:content_loc>
+            <video:title>Reportage Canal + sur les préférences motrices</video:title>
+            <video:description>
+                Reportage Canal + sur les préférences motrices par Nicolas BOURADA - Run&amp;Sense
+            </video:description>
+        </video:video>
+        <video:video>
+            <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-4.webm
+            </video:content_loc>
+            <video:title>Les préférences motrices : le cas Mezut Özil – Canal +</video:title>
+            <video:description>
+                Les préférences motrices : le cas Mezut Özil par Nicolas BOURADA - Run&amp;Sense
+            </video:description>
+        </video:video>
+        <video:video>
+            <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-5.webm
+            </video:content_loc>
+            <video:title>Comparatif des préférences Özil, Matuidi, Mavuba – Canal +</video:title>
+            <video:description>
+                Comparatif des préférences Özil, Matuidi, Mavuba par Nicolas BOURADA - Run&amp;Sense
+            </video:description>
+        </video:video>
+        <video:video>
+            <video:content_loc>
+                http://www.runetsense.fr/themes/soywod/runetsense/assets/video/video-6.webm
+            </video:content_loc>
+            <video:title>Introduction aux préférences motrices et testing plateau Canal +</video:title>
+            <video:description>
+                Introduction aux préférences motrices et testing plateau Canal + par Nicolas BOURADA - Run&amp;Sense
+            </video:description>
+        </video:video>
+    </url>
+    <url>
+        <loc>http://www.runetsense.fr/approach</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>http://www.runetsense.fr/contact</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+</urlset>
