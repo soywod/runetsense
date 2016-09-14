@@ -1,0 +1,17 @@
+@import "colors";
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: .8rem;
+  padding: 7px;
+  background: $black;
+  color: $white;
+  z-index: 2;
+
+  .social {
+    padding: 0 7px;
+  }
+}

@@ -9,15 +9,14 @@
 <html class="no-js" lang="fr"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="description"
-	      content="Société de formation et d'accompagnement. Expert certifié dans les approches comportementales. L'association des pratiques Action Type® (préférences motrices) et MBTI® (préférences cognitives) me permet de détecter et révéler les forces d'un individu et d'un groupe (entreprise et sport).">
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+	<meta name="author" content="Nicolas BOURADA">
+	<meta name="copyright" content="© Run&Sense">
 	<meta name="viewport" content="width=device-width">
-	<meta name="keywords"
-	      content="runetsense, run&sense, préférences motrices, préférences cognitives, sport, entreprise, nicolas bourada">
-	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ page.desc }}">
+	<meta name="keywords" content="{{ page.keys }}">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<title>{{ page.title }}</title>
 
 	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/vendor.min.css') }}">
 	<link rel="stylesheet" href="{{ site.url }}/{{ theme_path('assets/css/main.min.css') }}">
@@ -26,13 +25,7 @@
 	<!-- <link rel="manifest" href="{{ site.url }}/{{ theme_path('assets/manifest.json') }}"> -->
 </head>
 <body>
-	<!--[if lt IE 7]>
-	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-		your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>
-		to improve your experience.</p>
-	<![endif]-->
-
-	<div class="frame" id="{{ page.menu }}">
+	<div id="{{ page.menu }}">
 		<nav class="menu">
 			<div class="menu-logo">
 				<a href="/home">
@@ -55,42 +48,40 @@
 		{% endblock %}
 
 		{% if page.menu != 'home' %}
-		<div class="container">
-			<div class="frame-footer responsive large mobile center flex">
-				<span class="float-left">
-					Développé par <a href="https://soywood.fr" target="_blank">Soywod</a>
-				</span>
-				<span class="text-center">
-					COPYRIGHT © BY RUN&SENSE. ALL RIGHTS RESERVED
-				</span>
-				<span class="text-right">
-					<a href="https://www.facebook.com/runetsense/"
-					   target="_blank"
-					   class="frame-footer-social">
-						<i class="fa fa-facebook"></i></a>
+		<footer class="responsive large mobile center flex">
+			<span class="float-left">
+				Développement: <a href="https://soywod.fr" target="_blank">Clément DOUIN</a>
+			</span>
+			<span class="text-center">
+				Par Nicolas Bourada, consultant et fondateur de Run&Sense © RUN&SENSE
+			</span>
+			<span class="text-right">
+				<a href="https://www.facebook.com/runetsense/"
+				   target="_blank"
+				   class="social">
+					<i class="fa fa-facebook"></i></a>
 
-					<a href="https://fr.linkedin.com/in/nicolas-bourada-1bb7a052"
-					   target="_blank"
-					   class="frame-footer-social">
-						<i class="fa fa-linkedin"></i></a>
+				<a href="https://fr.linkedin.com/in/nicolas-bourada-1bb7a052"
+				   target="_blank"
+				   class="social">
+					<i class="fa fa-linkedin"></i></a>
 
-					<a href="https://twitter.com/nicolasbourada"
-					   target="_blank"
-					   class="frame-footer-social">
-						<i class="fa fa-twitter"></i></a>
+				<a href="https://twitter.com/nicolasbourada"
+				   target="_blank"
+				   class="social">
+					<i class="fa fa-twitter"></i></a>
 
-					<a href="https://www.instagram.com/runetsense/"
-					   target="_blank"
-					   class="frame-footer-social">
-						<i class="fa fa-instagram"></i></a>
+				<a href="https://www.instagram.com/runetsense/"
+				   target="_blank"
+				   class="social">
+					<i class="fa fa-instagram"></i></a>
 
-					<a href="https://www.youtube.com/user/MrParavis/"
-					   target="_blank"
-					   class="frame-footer-social">
-						<i class="fa fa-youtube-play"></i></a>
-				</span>
-			</div>
-		</div>
+				<a href="https://www.youtube.com/user/MrParavis/"
+				   target="_blank"
+				   class="social">
+					<i class="fa fa-youtube-play"></i></a>
+			</span>
+		</footer>
 		{% endif %}
 	</div>
 
