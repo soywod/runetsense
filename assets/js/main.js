@@ -83,7 +83,7 @@ function sport() {
 
 			$(".slider").not($slide).slideUp(200, function () {
 				if (! $slide.is(":visible")) {
-					$('.frame').animate({
+					$("html, body").animate({
 						scrollTop: offsetSlider
 					}, "slow");
 				}
@@ -118,9 +118,10 @@ function sport() {
 
 	$(".scroll-playlist").click(function (event) {
 		event.preventDefault();
+        console.log("CLICK");
 
-		$('.frame').animate({
-			scrollTop: $(".frame section").height()
+		$("html, body").animate({
+			scrollTop: $("body").height()
 		}, "slow");
 	});
 
@@ -172,7 +173,7 @@ function company() {
 
 			$(".slider").not($slide).slideUp(200, function () {
 				if (! $slide.is(":visible")) {
-					$('.frame').animate({
+					$("html, body").animate({
 						scrollTop: offsetSlider
 					}, "slow");
 				}
