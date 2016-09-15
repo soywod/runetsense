@@ -37,29 +37,34 @@
 @media only screen and (max-width: 319px) {
   .responsive.small.mobile.flex {
     flex-direction: column;
+    display: block;
   }
 }
 
 @media only screen and (max-width: 479px) {
   .responsive.medium.mobile.flex {
     flex-direction: column;
+    display: block;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .responsive.large.mobile.flex {
     flex-direction: column;
+    display: block;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .responsive.tablet.flex {
     flex-direction: column;
+    display: block;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   .responsive.desktop.flex {
     flex-direction: column;
+    display: block;
   }
 }
